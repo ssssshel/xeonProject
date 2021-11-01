@@ -7,7 +7,6 @@
 *********************
 <br>
 
-[[_TOC_]]
 
 # Descripción
 Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoción, venta y entrega al consumidor final.
@@ -83,24 +82,30 @@ Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoci
 >##Adobe XD
 >>###Link de descarga: http://www.mediafire.com/file/mwa512fwoj73y89/adobe_xd_Galileo.rar/file
 >>###Instalación: https://www.youtube.com/watch?v=uXqckX3CWVI
+>
 >##Bizagi Modeler
 >>###Link de descarga: https://portal.bizagi.com/en/bizagi-modeler-download
+>
 >##Font Awesome
 >>###Link: https://fontawesome.com
+>
 >##Google Drive
 >>###Carpeta grupal: https://drive.google.com/drive/folders/1oN0F37KTNQs6ajOoO67_hlYm1zWz1JuT?usp=sharing
 > 
 >##Git
 >>###Link de descarga: https://git-scm.com/downloads
 >>###Tutorial: https://www.youtube.com/watch?v=hWglK8nWh60
+>
 >##Github
 >>###Link repo grupal: https://github.com/ssssshel/xeonProject
 >>###Link de descarga (Github Desktop): https://desktop.github.com
 >>###Tutorial: https://www.youtube.com/watch?v=357oGE7qx88
+>
 >##Sass 
 >>###Instalar con npm
 >>`npm install -g sass`
 >>###Tutorial: https://www.youtube.com/watch?v=rDBzoq86SXY
+>
 >##NodeJS
 >>###Link de descarga: https://nodejs.org/es/
 
