@@ -1,4 +1,4 @@
-# xeonProject
+
 
 *********************
 
@@ -29,7 +29,7 @@ Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoci
 <br>
 
 
-#Funcionalidades del proyecto
+# Funcionalidades del proyecto
 - Filtros de búsqueda (tipo, marca, precio, etc).
 - Plantillas parciales para producto individual (MongoDB).
 - Método de pago (por definir).
@@ -41,7 +41,7 @@ Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoci
 *********************
 <br>
 
-#Línea de tiempo
+# Línea de tiempo
 
 
 | Sprint | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 | Sprint 6 | Periodo almohada |
@@ -56,7 +56,7 @@ Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoci
 *********************
 <br>
 
-#Ruta de trabajo
+# Ruta de trabajo
 1. Asignación de la tarea a realizar
 2. Desarrollo inicial
 3. Testeo
@@ -70,36 +70,37 @@ Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoci
 *********************
 <br>
 
-#Documentación
+# Documentación
 <br>
 
->##Adobe XD
->>###Link de descarga: http://www.mediafire.com/file/mwa512fwoj73y89/adobe_xd_Galileo.rar/file
->>###Instalación: https://www.youtube.com/watch?v=uXqckX3CWVI
+> ## Adobe XD
+>> ### Link de descarga: http://www.mediafire.com/file/mwa512fwoj73y89/adobe_xd_Galileo.rar/file
+>> ### Instalación: https://www.youtube.com/watch?v=uXqckX3CWVI
 >
->##Bizagi Modeler
->>###Link de descarga: https://portal.bizagi.com/en/bizagi-modeler-download
+> ## Bizagi Modeler
+>> ### Link de descarga: https://portal.bizagi.com/en/bizagi-modeler-download
 >
->##Font Awesome
->>###Link: https://fontawesome.com
+> ## Font Awesome
+>> ### Link: https://fontawesome.com
 >
->##Google Drive
->>###Carpeta grupal: https://drive.google.com/drive/folders/1oN0F37KTNQs6ajOoO67_hlYm1zWz1JuT?usp=sharing
+> ## Google Drive
+>> ### Carpeta grupal: https://drive.google.com/drive/folders/1oN0F37KTNQs6ajOoO67_hlYm1zWz1JuT?usp=sharing
 > 
->##Git
->>###Link de descarga: https://git-scm.com/downloads
->>###Tutorial: https://www.youtube.com/watch?v=hWglK8nWh60
+> ## Git
+>> ### Link de descarga: https://git-scm.com/downloads
+>> ### Tutorial: https://www.youtube.com/watch?v=hWglK8nWh60
 >
->##Github
->>###Link repo grupal: https://github.com/ssssshel/xeonProject
->>###Link de descarga (Github Desktop): https://desktop.github.com
->>###Tutorial: https://www.youtube.com/watch?v=357oGE7qx88
+> ## Github
+>> ### Link repo grupal: https://github.com/ssssshel/xeonProject
+>> ### Link de descarga (Github Desktop): https://desktop.github.com
+>> ### Tutorial: https://www.youtube.com/watch?v=357oGE7qx88
 >
->##Sass 
->>###Instalar con npm
+> ## Sass 
+>> ### Instalar con npm
 >>`npm install -g sass`
->>###Tutorial: https://www.youtube.com/watch?v=rDBzoq86SXY
+>> ### Tutorial: https://www.youtube.com/watch?v=rDBzoq86SXY
 >
->##NodeJS
->>###Link de descarga: https://nodejs.org/es/
+> ## NodeJS
+>> ### Link de descarga: https://nodejs.org/es/
+
 
