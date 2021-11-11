@@ -8,31 +8,33 @@
     background-color:  #400B24; 
     width: 1360px;
     height: 720px;
-    display: flex;
+    display:flex;
 }
 
 footer{
-    background-color:  #400B24; 
-    font-family:'Open Sans','Urbanist';
+    background-color:  #400B24;  
 }
 
 .col1{
-   
     width: 500px;
     height: 240px;
     align-items: center;
+    text-align: center;
 }
 
 .col1 h1{
     margin-bottom: 15px;
+    font-family: 'Urbanist-Regular';
 }
 
 .col1 p{
     margin-bottom: 15px;
+    font-family: 'Open Sans';
+    text-align: center;
 }
 
 .col2{
-   
+    text-align: center;
     width: 500px;
     height: 240px;
 }
@@ -42,32 +44,38 @@ footer{
 
 .col2 p{
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .col3{
-    
+    text-align: center;
     width: 500px;
     height: 240px;
 }
 
+
 .col3 img{
     width: 40px;
+    
 }
 
 .col3 .yt{
-    display: flex;
-    align-items: center;
+    
+   text-align: center;
     margin-bottom: 15px;
+    
 }
 
 .col3 .ig{
-    display: flex;
-    align-items: center;
+    
+    text-align: center;
     margin-bottom: 15px;
+    
 }
 
 .col3 .fb{
-    display: flex;
-    align-items: center;
+    
+    text-align: center;
     margin-bottom: 15px;
+    
 }
