@@ -13,12 +13,14 @@
 
 footer{
     background-color:  #400B24; 
+    font-family:'Open Sans','Urbanist';
 }
 
 .col1{
-    background-color: #da2c7d;
+   
     width: 500px;
     height: 240px;
+    align-items: center;
 }
 
 .col1 h1{
@@ -30,7 +32,7 @@ footer{
 }
 
 .col2{
-    background-color: #5a5a5a;
+   
     width: 500px;
     height: 240px;
 }
@@ -43,7 +45,7 @@ footer{
 }
 
 .col3{
-    background-color: #3e4204;
+    
     width: 500px;
     height: 240px;
 }
