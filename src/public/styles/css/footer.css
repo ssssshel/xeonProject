@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color:  #400B24; 
+    width: 1360px;
+    height: 720px;
+}
+
+.col1{
+    background-color: #400B24;
+    width: 400px;
+    height: 400px;
+}
+
+.col2{
+    background-color: #400B24;
+    width: 400px;
+    height: 400px;
+}
+
+.col3{
+    background-color: #400B24;
+    width: 400px;
+    height: 400px;
+}
+
+.col3 .yt{
+    background-color: #F5F5F5;
+    width: 100px;
+    height: 100px;
+}
+
+.col3 .ig{
+    background-color: #F5F5F5;
+    width: 100px;
+    height: 100px;
+}
+
+.col3 .fb{
+    background-color: #F5F5F5;
+    width: 100px;
+    height: 100px;
+}
