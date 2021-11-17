@@ -1,0 +1,155 @@
+@import "components/fonts.scss";
+@import "components/colors.scss";
+@import "components/responsive.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    background-color: $lgt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+
+    .containerMenu {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: toRem(120);
+
+        .filter {
+            height: 100vh;
+            width: 20%;
+            position: fixed;
+            top: 0;
+            border-right: $drk solid toRem(1);
+            align-items: center;
+            padding-left: toRem(40);
+            padding-top: toRem(50);
+
+            .titleFilter {
+                h2 {
+                    @include fontSettings("Urb-Reg", $drk, 24);
+                }
+            }
+        }
+
+        .menu {
+            height: 100vh;
+            width: 80%;
+            position: relative;
+            right: -25%;
+            margin-top: toRem(50);
+            display: grid;
+            grid-template-columns: 22% 22% 22%;
+            grid-template-rows: 80vh 80vh;
+            column-gap: toRem(50);
+            row-gap: toRem(70);
+
+            .product {
+                width: 100%;
+                height: auto;
+                padding-bottom: toRem(20);
+
+                display: flex;
+                flex-direction: column;
+                gap: toRem(30);
+                overflow-y: hidden;
+                align-items: center;
+
+
+                .imgCont {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                @supports (object-fit: cover) {
+                    .imgCont {
+                        overflow-y: hidden;
+
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                            overflow-y: hidden;
+                        }
+                    }
+                }
+
+                .infoCont {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(30);
+
+                    .productName {
+                        overflow-y: hidden;
+                        @include fontSettings("Urb-Bol", $drk, 16)
+                    }
+
+                    .productPrize {
+                        overflow-y: hidden;
+                        @include fontSettings("Urb-Bol", $drk, 14)
+                    }
+
+                    .productSpecs {
+                        overflow-y: hidden;
+
+                        .productAttribute {
+                            line-height: toRem(20);
+                            text-decoration: none;
+                            @include fontSettings("Urb-Reg", $drk, 12)
+                        }
+                    }
+                }
+
+                .butCont {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(10);
+
+                    .butCar {
+                        background-color: $drk;
+                        @include fontSettings("Open-Sans", $lgt, 12);
+                        font-weight: normal;
+                        height: toRem(40);
+                        width: toRem(200);
+                        border: none;
+                        border-radius: toRem(50);
+                    }
+
+                    .butCar:hover {
+                        background-color: #838d97;
+                    }
+
+                    .butSee {
+                        background-color: transparent;
+                        @include fontSettings("Open-Sans", $drk, 12);
+                        font-weight: normal;
+                        height: toRem(40);
+                        width: toRem(200);
+                        border: $drk solid toRem(1);
+                        border-radius: toRem(50);
+                    }
+
+                    .butSee:hover {
+                        color: #838d97;
+                    }
+                }
+            }
+
+            .product:hover {
+                border: $drk solid toRem(1);
+            }
+
+
+        }
+    }
+}

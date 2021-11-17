@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Urb-Reg";
+  src: url(/src/public/fonts/Urbanist-Regular.ttf); }
+
+@font-face {
+  font-family: "Urb-Bol";
+  src: url(/src/public/fonts/Urbanist-Bold.ttf); }
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url(/src/public/fonts/OpenSans-Regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+.container {
+  width: 100%;
+  background-color: #F9EAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0; }
+  .container .containerMenu {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 7.5rem; }
+    .container .containerMenu .filter {
+      height: 100vh;
+      width: 20%;
+      position: fixed;
+      top: 0;
+      border-right: #27082B solid 0.0625rem;
+      align-items: center;
+      padding-left: 2.5rem;
+      padding-top: 3.125rem; }
+      .container .containerMenu .filter .titleFilter h2 {
+        font-family: "Urb-Reg";
+        color: #27082B;
+        font-size: 1.5rem; }
+    .container .containerMenu .menu {
+      height: 100vh;
+      width: 80%;
+      position: relative;
+      right: -25%;
+      margin-top: 3.125rem;
+      display: grid;
+      grid-template-columns: 22% 22% 22%;
+      grid-template-rows: 80vh 80vh;
+      column-gap: 3.125rem;
+      row-gap: 4.375rem; }
+      .container .containerMenu .menu .product {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        overflow-y: hidden;
+        align-items: center; }
+        .container .containerMenu .menu .product .imgCont img {
+          width: 100%; }
+        @supports (object-fit: cover) {
+          .container .containerMenu .menu .product .imgCont {
+            overflow-y: hidden; }
+            .container .containerMenu .menu .product .imgCont img {
+              height: 100%;
+              object-fit: cover;
+              object-position: center center;
+              overflow-y: hidden; } }
+        .container .containerMenu .menu .product .infoCont {
+          display: flex;
+          flex-direction: column;
+          gap: 1.875rem; }
+          .container .containerMenu .menu .product .infoCont .productName {
+            overflow-y: hidden;
+            font-family: "Urb-Bol";
+            color: #27082B;
+            font-size: 1rem; }
+          .container .containerMenu .menu .product .infoCont .productPrize {
+            overflow-y: hidden;
+            font-family: "Urb-Bol";
+            color: #27082B;
+            font-size: 0.875rem; }
+          .container .containerMenu .menu .product .infoCont .productSpecs {
+            overflow-y: hidden; }
+            .container .containerMenu .menu .product .infoCont .productSpecs .productAttribute {
+              line-height: 1.25rem;
+              text-decoration: none;
+              font-family: "Urb-Reg";
+              color: #27082B;
+              font-size: 0.75rem; }
+        .container .containerMenu .menu .product .butCont {
+          display: flex;
+          flex-direction: column;
+          gap: 0.625rem; }
+          .container .containerMenu .menu .product .butCont .butCar {
+            background-color: #27082B;
+            font-family: "Open-Sans";
+            color: #F9EAFB;
+            font-size: 0.75rem;
+            font-weight: normal;
+            height: 2.5rem;
+            width: 12.5rem;
+            border: none;
+            border-radius: 3.125rem; }
+          .container .containerMenu .menu .product .butCont .butCar:hover {
+            background-color: #838d97; }
+          .container .containerMenu .menu .product .butCont .butSee {
+            background-color: transparent;
+            font-family: "Open-Sans";
+            color: #27082B;
+            font-size: 0.75rem;
+            font-weight: normal;
+            height: 2.5rem;
+            width: 12.5rem;
+            border: #27082B solid 0.0625rem;
+            border-radius: 3.125rem; }
+          .container .containerMenu .menu .product .butCont .butSee:hover {
+            color: #838d97; }
+      .container .containerMenu .menu .product:hover {
+        border: #27082B solid 0.0625rem; }

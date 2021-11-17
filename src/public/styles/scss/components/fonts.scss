@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Urb-Reg";
+    src: url(/src/public/fonts/Urbanist-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Urb-Bol";
+    src: url(/src/public/fonts/Urbanist-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url(/src/public/fonts/OpenSans-Regular.ttf);
+}
+
+@mixin fontSettings($v1, $v2, $v3) {
+    font-family: $v1;
+    color: $v2;
+    font-size: ($v3/16) + rem;
+}
