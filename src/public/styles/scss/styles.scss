@@ -20,15 +20,15 @@
 
     .header {
         width: 100%;
-        height: 100vh;
+        height: 105vh;
 
         .navbar {
             position: fixed;
             top: 0;
             width: 100%;
             height: toRem(80);
-            padding-left: toRem(95);
-            padding-right: toRem(95);
+            padding-left: toRem(45);
+            padding-right: toRem(45);
             background-color: $lgt;
             box-sizing: border-box;
             z-index: 5;
@@ -49,6 +49,11 @@
                         text-decoration: none;
                         @include fontSettings("Urbanist", $drk, 16);
                     }
+
+                    .option:hover {
+                        color: #707070;
+                        font-weight: bold;
+                    }
                 }
 
                 .navbarMiddle {
@@ -62,6 +67,7 @@
 
                     .logo:hover {
                         color: $drk;
+                        font-weight: bold;
                     }
                 }
 
@@ -78,13 +84,14 @@
 
                     .optionRight:hover {
                         color: #707070;
+                        font-weight: bold;
                     }
 
                     #find {
                         background-color: $drk;
-                        width: toRem(100);
+                        width: toRem(110);
                         height: toRem(90);
-                        padding-left: toRem(5);
+                        padding-left: toRem(10);
                         border: none;
                         display: flex;
                         gap: toRem(10);
@@ -140,12 +147,84 @@
             height: 100vh;
             width: 100%;
             position: fixed;
-            bottom: 0;
-            display: grid;
+            bottom: toRem(-80);
+            display: none;
             grid-template-columns: 2fr 3fr 4fr;
             grid-template-rows: 100vh;
             z-index: 3;
 
+        }
+
+        .headerSliderContainer {
+            width: 100%;
+            box-sizing: border-box;
+
+            #headerSliderLeft,
+            #headerSliderRight {
+                position: absolute;
+                bottom: toRem(300);
+                width: toRem(35);
+                height: toRem(35);
+                background-color: rgb(88, 81, 81);
+                backdrop-filter: blur(2px);
+                border: none;
+                border-radius: toRem(50);
+
+                @include fontSettings("Open Sans", $lgt, 20)
+            }
+
+            #headerSliderLeft:hover,
+            #headerSliderRight:hover {
+                background-color: #707070;
+            }
+
+            #headerSliderLeft {
+                left: toRem(40);
+            }
+
+            #headerSliderRight {
+                right: toRem(40);
+            }
+
+
+            .headerSlider {
+                #headerSlide1 {
+                    #textSlide1 {
+                        position: absolute;
+                        bottom: toRem(100);
+                        left: toRem(120);
+
+                        h2 {
+                            @include fontSettings("Urbanist", $lgt, 40);
+                        }
+
+                        p {
+                            @include fontSettings("Open Sans", $lgt, 24);
+                        }
+                    }
+
+                    #seeMore1 {
+                        position: absolute;
+                        bottom: toRem(100);
+                        left: toRem(720);
+                        width: toRem(120);
+                        height: toRem(40);
+                        @include fontSettings("Urbanist", $lgt, 16);
+                        background-color: $bas;
+                        border: none;
+                        border-radius: toRem(50);
+                    }
+
+                    #seeMore1:hover {
+                        background-color: #707070;
+                    }
+
+                    img {
+                        width: 105%;
+                        object-fit: cover;
+                    }
+                }
+            }
         }
     }
 }

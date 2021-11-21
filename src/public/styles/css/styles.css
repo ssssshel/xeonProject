@@ -3,7 +3,7 @@
   src: url(/docs/layouts/fonts/Urbanist-VariableFont_wght.ttf); }
 
 @font-face {
-  font-family: "Open-Sans";
+  font-family: "Open Sans";
   src: url(/docs/layouts/fonts/OpenSans-Regular.ttf); }
 
 @font-face {
@@ -25,14 +25,14 @@
     overflow: hidden; }
   .container .header {
     width: 100%;
-    height: 100vh; }
+    height: 105vh; }
     .container .header .navbar {
       position: fixed;
       top: 0;
       width: 100%;
       height: 5rem;
-      padding-left: 5.9375rem;
-      padding-right: 5.9375rem;
+      padding-left: 2.8125rem;
+      padding-right: 2.8125rem;
       background-color: #F5F5F5;
       box-sizing: border-box;
       z-index: 5; }
@@ -50,6 +50,9 @@
             font-family: "Urbanist";
             color: #400B24;
             font-size: 1rem; }
+          .container .header .navbar .navbarGrid .navbarLeft .option:hover {
+            color: #707070;
+            font-weight: bold; }
         .container .header .navbar .navbarGrid .navbarMiddle {
           display: flex;
           justify-content: center; }
@@ -59,7 +62,8 @@
             color: #707070;
             font-size: 2.1875rem; }
           .container .header .navbar .navbarGrid .navbarMiddle .logo:hover {
-            color: #400B24; }
+            color: #400B24;
+            font-weight: bold; }
         .container .header .navbar .navbarGrid .navbarRight {
           display: flex;
           flex-wrap: nowrap;
@@ -71,12 +75,13 @@
             font-size: 1rem;
             align-self: center; }
           .container .header .navbar .navbarGrid .navbarRight .optionRight:hover {
-            color: #707070; }
+            color: #707070;
+            font-weight: bold; }
           .container .header .navbar .navbarGrid .navbarRight #find {
             background-color: #400B24;
-            width: 6.25rem;
+            width: 6.875rem;
             height: 5.625rem;
-            padding-left: 0.3125rem;
+            padding-left: 0.625rem;
             border: none;
             display: flex;
             gap: 0.625rem;
@@ -108,8 +113,60 @@
       height: 100vh;
       width: 100%;
       position: fixed;
-      bottom: 0;
-      display: grid;
+      bottom: -5rem;
+      display: none;
       grid-template-columns: 2fr 3fr 4fr;
       grid-template-rows: 100vh;
       z-index: 3; }
+    .container .header .headerSliderContainer {
+      width: 100%;
+      box-sizing: border-box; }
+      .container .header .headerSliderContainer #headerSliderLeft,
+      .container .header .headerSliderContainer #headerSliderRight {
+        position: absolute;
+        bottom: 18.75rem;
+        width: 2.1875rem;
+        height: 2.1875rem;
+        background-color: #585151;
+        backdrop-filter: blur(2px);
+        border: none;
+        border-radius: 3.125rem;
+        font-family: "Open Sans";
+        color: #F5F5F5;
+        font-size: 1.25rem; }
+      .container .header .headerSliderContainer #headerSliderLeft:hover,
+      .container .header .headerSliderContainer #headerSliderRight:hover {
+        background-color: #707070; }
+      .container .header .headerSliderContainer #headerSliderLeft {
+        left: 2.5rem; }
+      .container .header .headerSliderContainer #headerSliderRight {
+        right: 2.5rem; }
+      .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 {
+        position: absolute;
+        bottom: 6.25rem;
+        left: 7.5rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 h2 {
+          font-family: "Urbanist";
+          color: #F5F5F5;
+          font-size: 2.5rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 p {
+          font-family: "Open Sans";
+          color: #F5F5F5;
+          font-size: 1.5rem; }
+      .container .header .headerSliderContainer .headerSlider #headerSlide1 #seeMore1 {
+        position: absolute;
+        bottom: 6.25rem;
+        left: 45rem;
+        width: 7.5rem;
+        height: 2.5rem;
+        font-family: "Urbanist";
+        color: #F5F5F5;
+        font-size: 1rem;
+        background-color: #8C2E47;
+        border: none;
+        border-radius: 3.125rem; }
+      .container .header .headerSliderContainer .headerSlider #headerSlide1 #seeMore1:hover {
+        background-color: #707070; }
+      .container .header .headerSliderContainer .headerSlider #headerSlide1 img {
+        width: 105%;
+        object-fit: cover; }
