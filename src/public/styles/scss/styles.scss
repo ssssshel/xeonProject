@@ -1,0 +1,151 @@
+@import "components/colors";
+@import "components/fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+        overflow: hidden;
+    }
+
+    .header {
+        width: 100%;
+        height: 100vh;
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: toRem(80);
+            padding-left: toRem(95);
+            padding-right: toRem(95);
+            background-color: $lgt;
+            box-sizing: border-box;
+            z-index: 5;
+
+            .navbarGrid {
+                display: grid;
+                grid-template-columns: 1.3fr 1fr 1.3fr;
+                grid-template-rows: toRem(80);
+                align-items: center;
+
+
+                .navbarLeft {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+
+                    .option {
+                        text-decoration: none;
+                        @include fontSettings("Urbanist", $drk, 16);
+                    }
+                }
+
+                .navbarMiddle {
+                    display: flex;
+                    justify-content: center;
+
+                    .logo {
+                        text-decoration: none;
+                        @include fontSettings("Oswald", #707070, 35)
+                    }
+
+                    .logo:hover {
+                        color: $drk;
+                    }
+                }
+
+                .navbarRight {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+
+                    .optionRight {
+                        text-decoration: none;
+                        @include fontSettings("Urbanist", $drk, 16);
+                        align-self: center;
+                    }
+
+                    .optionRight:hover {
+                        color: #707070;
+                    }
+
+                    #find {
+                        background-color: $drk;
+                        width: toRem(100);
+                        height: toRem(90);
+                        padding-left: toRem(5);
+                        border: none;
+                        display: flex;
+                        gap: toRem(10);
+                        align-items: center;
+
+
+                        i {
+                            color: $lgt;
+                        }
+
+                        span {
+                            @include fontSettings("Urbanist", $lgt, 16);
+                            text-decoration: none;
+                        }
+                    }
+
+                    #iconCar,
+                    #iconUser {
+                        text-decoration: none;
+                        color: $drk;
+                        align-self: center;
+                    }
+
+                    #iconCar:hover,
+                    #iconUser:hover {
+                        color: #707070;
+                    }
+
+                    #iconCar {
+                        i {
+                            font-size: toRem(18);
+                        }
+                    }
+
+                    #iconUser {
+                        i {
+                            font-size: toRem(30);
+                        }
+                    }
+
+                    #find:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            .navbarGrid>div {
+                display: flex;
+            }
+        }
+
+        #optionNav {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: 2fr 3fr 4fr;
+            grid-template-rows: 100vh;
+            z-index: 3;
+
+        }
+    }
+}

@@ -1,118 +1,115 @@
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Urbanist', sans-serif;
-*/
-/*
-1. Posicionamiento
-2. Modelo Caja
-3. Tipografía 
-4. Visuales
-5. Otros
-*/
-:root{
-    --White-Smoke: #f5f5f5;
-    --Blackberry: #400B24;
-    --Triadic-color: #8C2E47;
-    --Triadic-color2:#a33263;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: var(--White-Smoke);
-}
-html{
-    font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
-}
+@font-face {
+  font-family: "Urbanist";
+  src: url(/docs/layouts/fonts/Urbanist-VariableFont_wght.ttf); }
 
-.seccion__menu h2{
-    text-align:center;
-    margin-left: 10px;
-    margin-top: 20px;
-    color: var(--Blackberry);
-    font-family: 'Urbanist', sans-serif;
-}
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
-.seccion__menu{
+@font-face {
+  font-family: "Open-Sans";
+  src: url(/docs/layouts/fonts/OpenSans-Regular.ttf); }
+
+@font-face {
+  font-family: "Oswald";
+  src: url(/docs/layouts/fonts/Oswald-VariableFont_wght.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container * {
+    overflow: hidden; }
+  .container .header {
     width: 100%;
-    height: 60px;
-}
-.seccion__menu h2{
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    
-}
-.seccion__menu .container_nav{
-    display: flex;
-    justify-content: center;
-}
-.seccion__menu .container_nav .nav-center-section{
-    
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-.container_nav .nav-center-section{
-    margin-right: 10px ;
-}
-.nav-center-section a{
-    margin: 60px;
-    font-size: 1.4rem;
-    color: var(--Blackberry);
-    font-family: 'Urbanist', sans-serif;
-}
-.nav-center-section a:hover{
-    color: var(--Triadic-color);
-    transition: 0.5s;
-    font-weight: 400;
-    text-decoration: underline;
-}
-.menu-image{
-    width: 350px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.menu-image img{
-    width: 400px;
-}
-
-.menu__info .name-phone h2{
-    text-align: center;
-    font-size: 2.4rem;
-    color: var(--Blackberry);
-    font-family: 'Urbanist', sans-serif;
-}
-
-.main__info{
-width: 150px;
-margin: 20px auto;
-}
-
-.button-info{
-    width: 150px;
-    height: 30px;
-    background-color: var(--Triadic-color);
-    border: none;
-}
-
-.button-info:hover{
-    background-color: var(--Triadic-color2);
-    transition: 0.5s;
-}
-.info_link{
-    font-size: 1rem;
-    text-align: center;
-    color: var(--White-Smoke);
-    font-weight:  500;
-
-}
+    height: 100vh; }
+    .container .header .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 5rem;
+      padding-left: 5.9375rem;
+      padding-right: 5.9375rem;
+      background-color: #F5F5F5;
+      box-sizing: border-box;
+      z-index: 5; }
+      .container .header .navbar .navbarGrid {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1.3fr;
+        grid-template-rows: 5rem;
+        align-items: center; }
+        .container .header .navbar .navbarGrid .navbarLeft {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between; }
+          .container .header .navbar .navbarGrid .navbarLeft .option {
+            text-decoration: none;
+            font-family: "Urbanist";
+            color: #400B24;
+            font-size: 1rem; }
+        .container .header .navbar .navbarGrid .navbarMiddle {
+          display: flex;
+          justify-content: center; }
+          .container .header .navbar .navbarGrid .navbarMiddle .logo {
+            text-decoration: none;
+            font-family: "Oswald";
+            color: #707070;
+            font-size: 2.1875rem; }
+          .container .header .navbar .navbarGrid .navbarMiddle .logo:hover {
+            color: #400B24; }
+        .container .header .navbar .navbarGrid .navbarRight {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between; }
+          .container .header .navbar .navbarGrid .navbarRight .optionRight {
+            text-decoration: none;
+            font-family: "Urbanist";
+            color: #400B24;
+            font-size: 1rem;
+            align-self: center; }
+          .container .header .navbar .navbarGrid .navbarRight .optionRight:hover {
+            color: #707070; }
+          .container .header .navbar .navbarGrid .navbarRight #find {
+            background-color: #400B24;
+            width: 6.25rem;
+            height: 5.625rem;
+            padding-left: 0.3125rem;
+            border: none;
+            display: flex;
+            gap: 0.625rem;
+            align-items: center; }
+            .container .header .navbar .navbarGrid .navbarRight #find i {
+              color: #F5F5F5; }
+            .container .header .navbar .navbarGrid .navbarRight #find span {
+              font-family: "Urbanist";
+              color: #F5F5F5;
+              font-size: 1rem;
+              text-decoration: none; }
+          .container .header .navbar .navbarGrid .navbarRight #iconCar,
+          .container .header .navbar .navbarGrid .navbarRight #iconUser {
+            text-decoration: none;
+            color: #400B24;
+            align-self: center; }
+          .container .header .navbar .navbarGrid .navbarRight #iconCar:hover,
+          .container .header .navbar .navbarGrid .navbarRight #iconUser:hover {
+            color: #707070; }
+          .container .header .navbar .navbarGrid .navbarRight #iconCar i {
+            font-size: 1.125rem; }
+          .container .header .navbar .navbarGrid .navbarRight #iconUser i {
+            font-size: 1.875rem; }
+          .container .header .navbar .navbarGrid .navbarRight #find:hover {
+            background-color: #707070; }
+      .container .header .navbar .navbarGrid > div {
+        display: flex; }
+    .container .header #optionNav {
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      display: grid;
+      grid-template-columns: 2fr 3fr 4fr;
+      grid-template-rows: 100vh;
+      z-index: 3; }
