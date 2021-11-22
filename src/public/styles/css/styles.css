@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Urbanist";
-  src: url(/docs/layouts/fonts/Urbanist-VariableFont_wght.ttf); }
+  src: url(/fonts/Urbanist-VariableFont_wght.ttf); }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(/docs/layouts/fonts/OpenSans-Regular.ttf); }
+  src: url(/fonts/OpenSans-Regular.ttf); }
 
 @font-face {
   font-family: "Oswald";
-  src: url(/docs/layouts/fonts/Oswald-VariableFont_wght.ttf); }
+  src: url(/fonts/Oswald-VariableFont_wght.ttf); }
 
 * {
   margin: 0;
@@ -30,7 +30,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      height: 5rem;
+      height: 4.375rem;
       padding-left: 2.8125rem;
       padding-right: 2.8125rem;
       background-color: #F5F5F5;
@@ -39,7 +39,7 @@
       .container .header .navbar .navbarGrid {
         display: grid;
         grid-template-columns: 1.3fr 1fr 1.3fr;
-        grid-template-rows: 5rem;
+        grid-template-rows: 4.375rem;
         align-items: center; }
         .container .header .navbar .navbarGrid .navbarLeft {
           display: flex;
@@ -52,7 +52,8 @@
             font-size: 1rem; }
           .container .header .navbar .navbarGrid .navbarLeft .option:hover {
             color: #707070;
-            font-weight: bold; }
+            font-weight: bold;
+            cursor: pointer; }
         .container .header .navbar .navbarGrid .navbarMiddle {
           display: flex;
           justify-content: center; }
@@ -80,7 +81,7 @@
           .container .header .navbar .navbarGrid .navbarRight #find {
             background-color: #400B24;
             width: 6.875rem;
-            height: 5.625rem;
+            height: 5.3125rem;
             padding-left: 0.625rem;
             border: none;
             display: flex;
@@ -109,15 +110,46 @@
             background-color: #707070; }
       .container .header .navbar .navbarGrid > div {
         display: flex; }
-    .container .header #optionNav {
+    .container .header #dropdownNav {
+      display: none;
       height: 100vh;
       width: 100%;
+      padding-top: 6.25rem;
+      padding-left: 2.8125rem;
       position: fixed;
-      bottom: -5rem;
-      display: none;
+      top: 0rem;
       grid-template-columns: 2fr 3fr 4fr;
       grid-template-rows: 100vh;
-      z-index: 3; }
+      z-index: 3;
+      background-color: rgba(255, 255, 255, 0.479);
+      backdrop-filter: blur(15px); }
+      .container .header #dropdownNav .navLeftPanel {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; }
+        .container .header #dropdownNav .navLeftPanel #titleOp {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.5rem;
+          border-bottom: solid #400B24 0.1875rem;
+          width: min-content; }
+        .container .header #dropdownNav .navLeftPanel #leftList {
+          display: flex;
+          flex-direction: column;
+          gap: 1.875rem; }
+          .container .header #dropdownNav .navLeftPanel #leftList .brandOp {
+            font-family: "Open Sans";
+            color: #400B24;
+            font-size: 1rem; }
+          .container .header #dropdownNav .navLeftPanel #leftList .brandOp:hover {
+            cursor: pointer;
+            font-weight: bold;
+            border-bottom: solid #400B24 0.0625rem;
+            width: min-content; }
+      .container .header #dropdownNav .navRightPanel .rightList .productOp {
+        font-family: "Urbanist";
+        color: #400B24;
+        font-size: 1.125rem; }
     .container .header .headerSliderContainer {
       width: 100%;
       box-sizing: border-box; }
@@ -141,32 +173,98 @@
         left: 2.5rem; }
       .container .header .headerSliderContainer #headerSliderRight {
         right: 2.5rem; }
-      .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 {
-        position: absolute;
-        bottom: 6.25rem;
-        left: 7.5rem; }
-        .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 h2 {
+      .container .header .headerSliderContainer .headerSlider #headerSlide1 {
+        display: none; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 {
+          position: absolute;
+          bottom: 6.25rem;
+          left: 7.5rem; }
+          .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 h2 {
+            font-family: "Urbanist";
+            color: #400B24;
+            font-size: 2.5rem; }
+          .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 p {
+            font-family: "Open Sans";
+            color: #400B24;
+            font-size: 1.5rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide1 #seeMore1 {
+          position: absolute;
+          bottom: 3.125rem;
+          left: 7.5rem;
+          width: 6.25rem;
+          height: 2.1875rem;
           font-family: "Urbanist";
           color: #F5F5F5;
-          font-size: 2.5rem; }
-        .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 p {
-          font-family: "Open Sans";
+          font-size: 1rem;
+          background-color: #400B24;
+          border: none;
+          border-radius: 3.125rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide1 #seeMore1:hover {
+          background-color: #707070; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide1 img {
+          width: 105%;
+          object-fit: cover; }
+      .container .header .headerSliderContainer .headerSlider #headerSlide2 {
+        display: none; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide2 #textSlide2 {
+          position: absolute;
+          bottom: 6.25rem;
+          left: 7.5rem;
+          line-height: 3.125rem; }
+          .container .header .headerSliderContainer .headerSlider #headerSlide2 #textSlide2 h2 {
+            font-family: "Urbanist";
+            color: #F5F5F5;
+            font-size: 2.5rem; }
+          .container .header .headerSliderContainer .headerSlider #headerSlide2 #textSlide2 p {
+            font-family: "Open Sans";
+            color: #F5F5F5;
+            font-size: 1.5rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide2 #seeMore2 {
+          position: absolute;
+          bottom: 3.125rem;
+          left: 7.5rem;
+          width: 6.25rem;
+          height: 2.1875rem;
+          font-family: "Urbanist";
           color: #F5F5F5;
-          font-size: 1.5rem; }
-      .container .header .headerSliderContainer .headerSlider #headerSlide1 #seeMore1 {
-        position: absolute;
-        bottom: 6.25rem;
-        left: 45rem;
-        width: 7.5rem;
-        height: 2.5rem;
-        font-family: "Urbanist";
-        color: #F5F5F5;
-        font-size: 1rem;
-        background-color: #8C2E47;
-        border: none;
-        border-radius: 3.125rem; }
-      .container .header .headerSliderContainer .headerSlider #headerSlide1 #seeMore1:hover {
-        background-color: #707070; }
-      .container .header .headerSliderContainer .headerSlider #headerSlide1 img {
-        width: 105%;
-        object-fit: cover; }
+          font-size: 1rem;
+          background-color: #8C2E47;
+          border: none;
+          border-radius: 3.125rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide2 #seeMore2:hover {
+          background-color: #707070; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide2 img {
+          width: 100%;
+          object-fit: cover; }
+      .container .header .headerSliderContainer .headerSlider #headerSlide3 {
+        display: none; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide3 #textSlide3 {
+          position: absolute;
+          bottom: 6.25rem;
+          left: 7.5rem;
+          line-height: 3.125rem; }
+          .container .header .headerSliderContainer .headerSlider #headerSlide3 #textSlide3 h2 {
+            font-family: "Urbanist";
+            color: #400B24;
+            font-size: 2.5rem; }
+          .container .header .headerSliderContainer .headerSlider #headerSlide3 #textSlide3 p {
+            font-family: "Open Sans";
+            color: #400B24;
+            font-size: 1.5rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide3 #seeMore3 {
+          position: absolute;
+          bottom: 3.125rem;
+          left: 7.5rem;
+          width: 6.25rem;
+          height: 2.1875rem;
+          font-family: "Urbanist";
+          color: #F5F5F5;
+          font-size: 1rem;
+          background-color: #400B24;
+          border: none;
+          border-radius: 3.125rem; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide3 #seeMore3:hover {
+          background-color: #707070; }
+        .container .header .headerSliderContainer .headerSlider #headerSlide3 img {
+          width: 100%;
+          object-fit: cover; }

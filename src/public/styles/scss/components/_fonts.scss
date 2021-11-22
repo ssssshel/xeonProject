@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Urbanist";
-    src: url(/docs/layouts/fonts/Urbanist-VariableFont_wght.ttf);
+    src: url(/fonts/Urbanist-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url(/docs/layouts/fonts/OpenSans-Regular.ttf);
+    src: url(/fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "Oswald";
-    src: url(/docs/layouts/fonts/Oswald-VariableFont_wght.ttf);
+    src: url(/fonts/Oswald-VariableFont_wght.ttf);
 }
 
 @mixin fontSettings($v1, $v2, $v3) {

@@ -5,10 +5,10 @@
             <div class="navbar">
                 <div class="navbarGrid">
                     <div class="navbarLeft">
-                        <a class="option" href="#">CELULARES</a>
-                        <a class="option" href="#">WATCHES</a>
-                        <a class="option" href="#">BUDS</a>
-                        <a class="option" href="#">ACCESORIOS</a>
+                        <p class="option" id="option1">CELULARES</p>
+                        <p class="option" id="option2">WATCHES</p>
+                        <p class="option" id="option3">BUDS</p>
+                        <p class="option" id="option4">ACCESORIOS</p>
                     </div>
                     <div class="navbarMiddle">
                         <a class="logo" href="#">XEON</a>
@@ -22,16 +22,14 @@
                     </div>
                 </div>
             </div>
-            <div id="optionNav">
+            <div id="dropdownNav">
                 <div class="navLeftPanel">
-                    <h2 class="titleOp">
-                        <ul class="leftList">
-                            <li class="brandOp">asdda</li>
-                        </ul>
-                    </h2>
+                    <h2 id="titleOp"></h2>
+                    <ul id="leftList">
+                    </ul>
                 </div>
                 <div class="navRightPanel">
-                    <ul class="rigthList">
+                    <ul class="rightList">
                         <li class="productOp">fasfa</li>
                     </ul>
                 </div>
@@ -44,19 +42,27 @@
                     <li id="headerSlide1">
                         <div id="textSlide1">
                             <h2>MI 11 ULTRA</h2>
-                            <p>La gama top de Xiaomi a precios irresistibles.</p>
+                            <p>La gama top de Xiaomi a precios irresistibles</p>
                         </div>
                         <input id="seeMore1" type="button" value="Ver más"></input>
                         <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Mi_11_Ultra_xiaomi.jpg" alt="Mi_11_Ultra_xiaomi">
                     </li>
                     <li id="headerSlide2">
                         <div id="textSlide2">
-                            <h2>GALAXY BUDS 2</h2>
-                            <p>Hasta con 30% de descuento.</p>
+                            <h2>CALIDAD DE SONIDO INIGUALABLE</h2>
+                            <p>Con los nuevos Galaxy Buds Live</p>
                         </div>
-                        <img src="https://www.pcworld.es/cmsdata/features/3807259/comprar-galaxy-buds-2_thumb800.jpg" alt="Bud2">
+                        <input id="seeMore2" type="button" value="Ver más"></input>
+                        <img src="https://images.unsplash.com/photo-1618213520536-ce37aabcd9e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" alt="Bud2">
                     </li>
-                    <li id="headerSlide3"></li>
+                    <li id="headerSlide3">
+                        <div id="textSlide3">
+                            <h2>COMODIDAD Y VERSATILIDAD</h2>
+                            <p>De sobra para los Apple Watch Series 6</p>
+                        </div>
+                        <input id="seeMore3" type="button" value="Ver más">
+                        <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="appleWatch6">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -106,4 +112,6 @@
         </div>
     </div>
 </body>
+<script src="./js/carousels.js"></script>
+<script src="./js/dropdown.js"></script>
 </html>

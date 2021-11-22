@@ -26,7 +26,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            height: toRem(80);
+            height: toRem(70);
             padding-left: toRem(45);
             padding-right: toRem(45);
             background-color: $lgt;
@@ -36,7 +36,7 @@
             .navbarGrid {
                 display: grid;
                 grid-template-columns: 1.3fr 1fr 1.3fr;
-                grid-template-rows: toRem(80);
+                grid-template-rows: toRem(70);
                 align-items: center;
 
 
@@ -53,6 +53,7 @@
                     .option:hover {
                         color: #707070;
                         font-weight: bold;
+                        cursor: pointer;
                     }
                 }
 
@@ -90,7 +91,7 @@
                     #find {
                         background-color: $drk;
                         width: toRem(110);
-                        height: toRem(90);
+                        height: toRem(85);
                         padding-left: toRem(10);
                         border: none;
                         display: flex;
@@ -143,16 +144,57 @@
             }
         }
 
-        #optionNav {
+        #dropdownNav {
+            display: none;
             height: 100vh;
             width: 100%;
+            padding-top: toRem(100);
+            padding-left: toRem(45);
             position: fixed;
-            bottom: toRem(-80);
-            display: none;
+            top: toRem(0);
             grid-template-columns: 2fr 3fr 4fr;
             grid-template-rows: 100vh;
             z-index: 3;
+            background-color: rgba(255, 255, 255, 0.479);
+            backdrop-filter: blur(15px);
 
+            .navLeftPanel {
+                display: flex;
+                flex-direction: column;
+                gap: toRem(30);
+
+                #titleOp {
+                    @include fontSettings("Urbanist", $drk, 24);
+                    border-bottom: solid $drk toRem(3);
+                    width: min-content;
+                }
+
+                #leftList {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(30);
+
+                    .brandOp {
+                        @include fontSettings("Open Sans", $drk, 16)
+                    }
+
+                    .brandOp:hover {
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-bottom: solid $drk toRem(1);
+                        width: min-content;
+                    }
+                }
+            }
+
+            .navRightPanel {
+                .rightList {
+
+                    .productOp {
+                        @include fontSettings("Urbanist", $drk, 18)
+                    }
+                }
+            }
         }
 
         .headerSliderContainer {
@@ -189,28 +231,30 @@
 
             .headerSlider {
                 #headerSlide1 {
+                    display: none;
+
                     #textSlide1 {
                         position: absolute;
                         bottom: toRem(100);
                         left: toRem(120);
 
                         h2 {
-                            @include fontSettings("Urbanist", $lgt, 40);
+                            @include fontSettings("Urbanist", $drk, 40);
                         }
 
                         p {
-                            @include fontSettings("Open Sans", $lgt, 24);
+                            @include fontSettings("Open Sans", $drk, 24);
                         }
                     }
 
                     #seeMore1 {
                         position: absolute;
-                        bottom: toRem(100);
-                        left: toRem(720);
-                        width: toRem(120);
-                        height: toRem(40);
+                        bottom: toRem(50);
+                        left: toRem(120);
+                        width: toRem(100);
+                        height: toRem(35);
                         @include fontSettings("Urbanist", $lgt, 16);
-                        background-color: $bas;
+                        background-color: $drk;
                         border: none;
                         border-radius: toRem(50);
                     }
@@ -224,7 +268,89 @@
                         object-fit: cover;
                     }
                 }
+
+                #headerSlide2 {
+                    display: none;
+
+                    #textSlide2 {
+                        position: absolute;
+                        bottom: toRem(100);
+                        left: toRem(120);
+                        line-height: toRem(50);
+
+                        h2 {
+                            @include fontSettings("Urbanist", $lgt, 40);
+                        }
+
+                        p {
+                            @include fontSettings("Open Sans", $lgt, 24);
+                        }
+                    }
+
+                    #seeMore2 {
+                        position: absolute;
+                        bottom: toRem(50);
+                        left: toRem(120);
+                        width: toRem(100);
+                        height: toRem(35);
+                        @include fontSettings("Urbanist", $lgt, 16);
+                        background-color: $bas;
+                        border: none;
+                        border-radius: toRem(50);
+                    }
+
+                    #seeMore2:hover {
+                        background-color: #707070;
+                    }
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                #headerSlide3 {
+                    display: none;
+
+                    #textSlide3 {
+                        position: absolute;
+                        bottom: toRem(100);
+                        left: toRem(120);
+                        line-height: toRem(50);
+
+                        h2 {
+                            @include fontSettings("Urbanist", $drk, 40);
+                        }
+
+                        p {
+                            @include fontSettings("Open Sans", $drk, 24);
+                        }
+                    }
+
+                    #seeMore3 {
+                        position: absolute;
+                        bottom: toRem(50);
+                        left: toRem(120);
+                        width: toRem(100);
+                        height: toRem(35);
+                        @include fontSettings("Urbanist", $lgt, 16);
+                        background-color: $drk;
+                        border: none;
+                        border-radius: toRem(50);
+                    }
+
+                    #seeMore3:hover {
+                        background-color: #707070;
+                    }
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
             }
+
+
         }
     }
 }
