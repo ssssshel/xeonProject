@@ -25,7 +25,7 @@
     overflow: hidden; }
   .container .header {
     width: 100%;
-    height: 105vh; }
+    height: 100vh; }
     .container .header .navbar {
       position: fixed;
       top: 0;
@@ -86,7 +86,8 @@
             border: none;
             display: flex;
             gap: 0.625rem;
-            align-items: center; }
+            align-items: center;
+            cursor: pointer; }
             .container .header .navbar .navbarGrid .navbarRight #find i {
               color: #F5F5F5; }
             .container .header .navbar .navbarGrid .navbarRight #find span {
@@ -116,16 +117,19 @@
       width: 100%;
       padding-top: 6.25rem;
       padding-left: 2.8125rem;
+      padding-right: 2.8125rem;
       position: fixed;
       top: 0rem;
-      grid-template-columns: 2fr 3fr 4fr;
-      grid-template-rows: 100vh;
+      grid-template-columns: 3fr 5fr 5fr;
+      grid-template-rows: 90vh 10vh;
       z-index: 3;
-      background-color: rgba(255, 255, 255, 0.479);
+      background-color: #F5F5F5;
       backdrop-filter: blur(15px); }
       .container .header #dropdownNav .navLeftPanel {
         display: flex;
         flex-direction: column;
+        grid-column: 1/2;
+        grid-row: 1/2;
         gap: 1.875rem; }
         .container .header #dropdownNav .navLeftPanel #titleOp {
           font-family: "Urbanist";
@@ -146,10 +150,76 @@
             font-weight: bold;
             border-bottom: solid #400B24 0.0625rem;
             width: min-content; }
-      .container .header #dropdownNav .navRightPanel .rightList .productOp {
-        font-family: "Urbanist";
-        color: #400B24;
-        font-size: 1.125rem; }
+      .container .header #dropdownNav .navRightPanel {
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .container .header #dropdownNav .navRightPanel .rightList {
+          display: none;
+          border-left: solid #400B24 0.0625rem;
+          height: min-content;
+          padding-left: 2.8125rem;
+          position: relative;
+          top: 3.75rem;
+          flex-direction: column;
+          gap: 1.875rem; }
+          .container .header #dropdownNav .navRightPanel .rightList .productOp {
+            font-family: "Urbanist";
+            color: #400B24;
+            font-size: 1.125rem; }
+            .container .header #dropdownNav .navRightPanel .rightList .productOp a {
+              text-decoration: none;
+              color: #400B24; }
+            .container .header #dropdownNav .navRightPanel .rightList .productOp a:hover {
+              font-weight: bold; }
+      .container .header #dropdownNav .rightFrame {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: right;
+        gap: 0.625rem;
+        border-left: solid #400B24 0.0625rem; }
+        .container .header #dropdownNav .rightFrame #btnClose {
+          position: absolute;
+          border: none;
+          background-color: transparent;
+          cursor: pointer; }
+          .container .header #dropdownNav .rightFrame #btnClose .fa-times {
+            font-size: 1.5625rem; }
+        .container .header #dropdownNav .rightFrame .productExample {
+          height: 80vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.875rem; }
+          .container .header #dropdownNav .rightFrame .productExample .exampleImgContainer {
+            height: auto; }
+            .container .header #dropdownNav .rightFrame .productExample .exampleImgContainer #exampleImg {
+              width: 25rem;
+              height: auto;
+              border-radius: 0.625rem; }
+          @supports (object-fit: cover) {
+            .container .header #dropdownNav .rightFrame .productExample .exampleImgContainer {
+              object-fit: cover;
+              object-position: center center; } }
+          .container .header #dropdownNav .rightFrame .productExample #exampleTitle {
+            font-family: "Urbanist";
+            color: #400B24;
+            font-size: 1.25rem; }
+          .container .header #dropdownNav .rightFrame .productExample #exSM {
+            font-family: "Open Sans";
+            color: #400B24;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none; }
+          .container .header #dropdownNav .rightFrame .productExample #exSM:hover {
+            text-decoration: underline; }
+      .container .header #dropdownNav .goUp {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        bottom: 6.25rem; }
     .container .header .headerSliderContainer {
       width: 100%;
       box-sizing: border-box; }
@@ -159,10 +229,11 @@
         bottom: 18.75rem;
         width: 2.1875rem;
         height: 2.1875rem;
-        background-color: #585151;
+        background-color: rgba(88, 81, 81, 0.301);
         backdrop-filter: blur(2px);
         border: none;
         border-radius: 3.125rem;
+        cursor: pointer;
         font-family: "Open Sans";
         color: #F5F5F5;
         font-size: 1.25rem; }
@@ -174,11 +245,13 @@
       .container .header .headerSliderContainer #headerSliderRight {
         right: 2.5rem; }
       .container .header .headerSliderContainer .headerSlider #headerSlide1 {
-        display: none; }
+        display: none;
+        padding-top: 4.375rem; }
         .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 {
           position: absolute;
           bottom: 6.25rem;
-          left: 7.5rem; }
+          left: 7.5rem;
+          line-height: 3.125rem; }
           .container .header .headerSliderContainer .headerSlider #headerSlide1 #textSlide1 h2 {
             font-family: "Urbanist";
             color: #400B24;
@@ -205,7 +278,8 @@
           width: 105%;
           object-fit: cover; }
       .container .header .headerSliderContainer .headerSlider #headerSlide2 {
-        display: none; }
+        display: none;
+        padding-top: 0rem; }
         .container .header .headerSliderContainer .headerSlider #headerSlide2 #textSlide2 {
           position: absolute;
           bottom: 6.25rem;
@@ -237,7 +311,8 @@
           width: 100%;
           object-fit: cover; }
       .container .header .headerSliderContainer .headerSlider #headerSlide3 {
-        display: none; }
+        display: none;
+        padding-top: 5rem; }
         .container .header .headerSliderContainer .headerSlider #headerSlide3 #textSlide3 {
           position: absolute;
           bottom: 6.25rem;

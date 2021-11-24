@@ -20,7 +20,7 @@
 
     .header {
         width: 100%;
-        height: 105vh;
+        height: 100vh;
 
         .navbar {
             position: fixed;
@@ -97,7 +97,7 @@
                         display: flex;
                         gap: toRem(10);
                         align-items: center;
-
+                        cursor: pointer;
 
                         i {
                             color: $lgt;
@@ -150,17 +150,20 @@
             width: 100%;
             padding-top: toRem(100);
             padding-left: toRem(45);
+            padding-right: toRem(45);
             position: fixed;
             top: toRem(0);
-            grid-template-columns: 2fr 3fr 4fr;
-            grid-template-rows: 100vh;
+            grid-template-columns: 3fr 5fr 5fr;
+            grid-template-rows: 90vh 10vh;
             z-index: 3;
-            background-color: rgba(255, 255, 255, 0.479);
+            background-color: $lgt;
             backdrop-filter: blur(15px);
 
             .navLeftPanel {
                 display: flex;
                 flex-direction: column;
+                grid-column: 1/2;
+                grid-row: 1/2;
                 gap: toRem(30);
 
                 #titleOp {
@@ -188,12 +191,102 @@
             }
 
             .navRightPanel {
+                grid-column: 2/3;
+                grid-row: 1/2;
+
                 .rightList {
+                    display: none;
+                    border-left: solid $drk toRem(1);
+                    height: min-content;
+                    padding-left: toRem(45);
+                    position: relative;
+                    top: toRem(60);
+                    flex-direction: column;
+                    gap: toRem(30);
 
                     .productOp {
-                        @include fontSettings("Urbanist", $drk, 18)
+                        @include fontSettings("Urbanist", $drk, 18);
+
+                        a {
+                            text-decoration: none;
+                            color: $drk;
+                        }
+
+                        a:hover {
+                            font-weight: bold;
+                        }
                     }
                 }
+            }
+
+            .rightFrame {
+                grid-column: 3/4;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: right;
+                gap: toRem(10);
+                border-left: solid $drk toRem(1);
+
+                #btnClose {
+                    position: absolute;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+
+                    .fa-times {
+
+                        font-size: toRem(25);
+                    }
+                }
+
+
+                .productExample {
+                    height: 80vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: toRem(30);
+
+                    .exampleImgContainer {
+                        height: auto;
+
+                        #exampleImg {
+                            width: toRem(400);
+                            height: auto;
+                            border-radius: toRem(10);
+                        }
+                    }
+
+                    @supports (object-fit: cover) {
+                        .exampleImgContainer {
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+
+                    #exampleTitle {
+                        @include fontSettings('Urbanist', $drk, 20)
+                    }
+
+                    #exSM {
+                        @include fontSettings('Open Sans', $drk, 16);
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+
+                    #exSM:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .goUp {
+                grid-column: 1/4;
+                grid-row: 2/3;
+                width: 100%;
+                height: 10vh;
+                position: absolute;
+                bottom: toRem(100);
             }
         }
 
@@ -201,17 +294,18 @@
             width: 100%;
             box-sizing: border-box;
 
+
             #headerSliderLeft,
             #headerSliderRight {
                 position: absolute;
                 bottom: toRem(300);
                 width: toRem(35);
                 height: toRem(35);
-                background-color: rgb(88, 81, 81);
+                background-color: rgba(88, 81, 81, 0.301);
                 backdrop-filter: blur(2px);
                 border: none;
                 border-radius: toRem(50);
-
+                cursor: pointer;
                 @include fontSettings("Open Sans", $lgt, 20)
             }
 
@@ -232,11 +326,13 @@
             .headerSlider {
                 #headerSlide1 {
                     display: none;
+                    padding-top: toRem(70);
 
                     #textSlide1 {
                         position: absolute;
                         bottom: toRem(100);
                         left: toRem(120);
+                        line-height: toRem(50);
 
                         h2 {
                             @include fontSettings("Urbanist", $drk, 40);
@@ -271,6 +367,7 @@
 
                 #headerSlide2 {
                     display: none;
+                    padding-top: toRem(0);
 
                     #textSlide2 {
                         position: absolute;
@@ -311,6 +408,8 @@
 
                 #headerSlide3 {
                     display: none;
+                    padding-top: toRem(80);
+
 
                     #textSlide3 {
                         position: absolute;

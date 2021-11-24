@@ -6,7 +6,7 @@ const s1 = document.getElementById('headerSlide1');
 const s2 = document.getElementById('headerSlide2');
 const s3 = document.getElementById('headerSlide3');
 
-const intervalTime = 3500;
+const intervalTime = 4000;
 let position = 0;
 
 const carousel = [s1, s2, s3];
