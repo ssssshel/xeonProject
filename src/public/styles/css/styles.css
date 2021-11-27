@@ -187,6 +187,7 @@
             font-size: 1.5625rem; }
         .container .header #dropdownNav .rightFrame .productExample {
           height: 80vh;
+          width: 85%;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -343,3 +344,1152 @@
         .container .header .headerSliderContainer .headerSlider #headerSlide3 img {
           width: 100%;
           object-fit: cover; }
+  .container .accesoriesSection {
+    background-color: #8C2E47; }
+  .container .mobileSection,
+  .container .accesoriesSection {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center; }
+    .container .mobileSection .mobileContainer,
+    .container .mobileSection .accesoriesContainer,
+    .container .accesoriesSection .mobileContainer,
+    .container .accesoriesSection .accesoriesContainer {
+      position: absolute;
+      bottom: 3.125rem;
+      height: 100vh;
+      width: 90%;
+      margin: auto 0 auto 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem; }
+      .container .mobileSection .mobileContainer .mobileTitle,
+      .container .mobileSection .accesoriesContainer .mobileTitle,
+      .container .accesoriesSection .mobileContainer .mobileTitle,
+      .container .accesoriesSection .accesoriesContainer .mobileTitle {
+        height: 2.1875rem;
+        font-family: "Urbanist";
+        color: #400B24;
+        font-size: 1.625rem; }
+      .container .mobileSection .mobileContainer .accesoriesTitle,
+      .container .mobileSection .accesoriesContainer .accesoriesTitle,
+      .container .accesoriesSection .mobileContainer .accesoriesTitle,
+      .container .accesoriesSection .accesoriesContainer .accesoriesTitle {
+        height: 2.1875rem;
+        font-family: "Urbanist";
+        color: #F5F5F5;
+        font-size: 1.625rem; }
+      .container .mobileSection .mobileContainer .mobileOptions,
+      .container .mobileSection .mobileContainer .accesoriesOptions,
+      .container .mobileSection .accesoriesContainer .mobileOptions,
+      .container .mobileSection .accesoriesContainer .accesoriesOptions,
+      .container .accesoriesSection .mobileContainer .mobileOptions,
+      .container .accesoriesSection .mobileContainer .accesoriesOptions,
+      .container .accesoriesSection .accesoriesContainer .mobileOptions,
+      .container .accesoriesSection .accesoriesContainer .accesoriesOptions {
+        height: 2.5rem;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer; }
+        .container .mobileSection .mobileContainer .mobileOptions .mobileOption,
+        .container .mobileSection .mobileContainer .accesoriesOptions .mobileOption,
+        .container .mobileSection .accesoriesContainer .mobileOptions .mobileOption,
+        .container .mobileSection .accesoriesContainer .accesoriesOptions .mobileOption,
+        .container .accesoriesSection .mobileContainer .mobileOptions .mobileOption,
+        .container .accesoriesSection .mobileContainer .accesoriesOptions .mobileOption,
+        .container .accesoriesSection .accesoriesContainer .mobileOptions .mobileOption,
+        .container .accesoriesSection .accesoriesContainer .accesoriesOptions .mobileOption {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.125rem; }
+          .container .mobileSection .mobileContainer .mobileOptions .mobileOption a,
+          .container .mobileSection .mobileContainer .accesoriesOptions .mobileOption a,
+          .container .mobileSection .accesoriesContainer .mobileOptions .mobileOption a,
+          .container .mobileSection .accesoriesContainer .accesoriesOptions .mobileOption a,
+          .container .accesoriesSection .mobileContainer .mobileOptions .mobileOption a,
+          .container .accesoriesSection .mobileContainer .accesoriesOptions .mobileOption a,
+          .container .accesoriesSection .accesoriesContainer .mobileOptions .mobileOption a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesOptions .mobileOption a {
+            text-decoration: none;
+            color: #400B24; }
+        .container .mobileSection .mobileContainer .mobileOptions .accOption,
+        .container .mobileSection .mobileContainer .accesoriesOptions .accOption,
+        .container .mobileSection .accesoriesContainer .mobileOptions .accOption,
+        .container .mobileSection .accesoriesContainer .accesoriesOptions .accOption,
+        .container .accesoriesSection .mobileContainer .mobileOptions .accOption,
+        .container .accesoriesSection .mobileContainer .accesoriesOptions .accOption,
+        .container .accesoriesSection .accesoriesContainer .mobileOptions .accOption,
+        .container .accesoriesSection .accesoriesContainer .accesoriesOptions .accOption {
+          font-family: "Urbanist";
+          color: #F5F5F5;
+          font-size: 1.125rem; }
+          .container .mobileSection .mobileContainer .mobileOptions .accOption a,
+          .container .mobileSection .mobileContainer .accesoriesOptions .accOption a,
+          .container .mobileSection .accesoriesContainer .mobileOptions .accOption a,
+          .container .mobileSection .accesoriesContainer .accesoriesOptions .accOption a,
+          .container .accesoriesSection .mobileContainer .mobileOptions .accOption a,
+          .container .accesoriesSection .mobileContainer .accesoriesOptions .accOption a,
+          .container .accesoriesSection .accesoriesContainer .mobileOptions .accOption a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesOptions .accOption a {
+            text-decoration: none;
+            color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .mobileOptions .accOption:hover,
+        .container .mobileSection .mobileContainer .accesoriesOptions .accOption:hover,
+        .container .mobileSection .accesoriesContainer .mobileOptions .accOption:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesOptions .accOption:hover,
+        .container .accesoriesSection .mobileContainer .mobileOptions .accOption:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesOptions .accOption:hover,
+        .container .accesoriesSection .accesoriesContainer .mobileOptions .accOption:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesOptions .accOption:hover {
+          font-weight: bold;
+          border-bottom: solid #F5F5F5 0.1875rem; }
+        .container .mobileSection .mobileContainer .mobileOptions .mobileOption:hover,
+        .container .mobileSection .mobileContainer .accesoriesOptions .mobileOption:hover,
+        .container .mobileSection .accesoriesContainer .mobileOptions .mobileOption:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesOptions .mobileOption:hover,
+        .container .accesoriesSection .mobileContainer .mobileOptions .mobileOption:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesOptions .mobileOption:hover,
+        .container .accesoriesSection .accesoriesContainer .mobileOptions .mobileOption:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesOptions .mobileOption:hover {
+          height: 1.5625rem;
+          width: min-content;
+          border-bottom: solid 0.1875rem #400B24; }
+          .container .mobileSection .mobileContainer .mobileOptions .mobileOption:hover a,
+          .container .mobileSection .mobileContainer .accesoriesOptions .mobileOption:hover a,
+          .container .mobileSection .accesoriesContainer .mobileOptions .mobileOption:hover a,
+          .container .mobileSection .accesoriesContainer .accesoriesOptions .mobileOption:hover a,
+          .container .accesoriesSection .mobileContainer .mobileOptions .mobileOption:hover a,
+          .container .accesoriesSection .mobileContainer .accesoriesOptions .mobileOption:hover a,
+          .container .accesoriesSection .accesoriesContainer .mobileOptions .mobileOption:hover a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesOptions .mobileOption:hover a {
+            font-weight: bold; }
+      .container .mobileSection .mobileContainer .mobileSlider,
+      .container .mobileSection .mobileContainer .accesoriesSlider,
+      .container .mobileSection .accesoriesContainer .mobileSlider,
+      .container .mobileSection .accesoriesContainer .accesoriesSlider,
+      .container .accesoriesSection .mobileContainer .mobileSlider,
+      .container .accesoriesSection .mobileContainer .accesoriesSlider,
+      .container .accesoriesSection .accesoriesContainer .mobileSlider,
+      .container .accesoriesSection .accesoriesContainer .accesoriesSlider {
+        height: 100%; }
+        .container .mobileSection .mobileContainer .mobileSlider .mobileSlide,
+        .container .mobileSection .mobileContainer .mobileSlider .accSlide,
+        .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide,
+        .container .mobileSection .mobileContainer .accesoriesSlider .accSlide,
+        .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide,
+        .container .mobileSection .accesoriesContainer .mobileSlider .accSlide,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide,
+        .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide,
+        .container .accesoriesSection .mobileContainer .mobileSlider .accSlide,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide {
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly; }
+          .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileName,
+          .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accName,
+          .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileName,
+          .container .mobileSection .mobileContainer .mobileSlider .accSlide .accName,
+          .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileName,
+          .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accName,
+          .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileName,
+          .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accName,
+          .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileName,
+          .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accName,
+          .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileName,
+          .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accName,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileName,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accName,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileName,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accName,
+          .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileName,
+          .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accName,
+          .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileName,
+          .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accName,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileName,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accName,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileName,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileName,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileName,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileName,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileName,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accName {
+            margin-top: 1.25rem;
+            text-align: center;
+            font-family: "Urbanist";
+            font-size: 2.1875rem; }
+          .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accName,
+          .container .mobileSection .mobileContainer .mobileSlider .accSlide .accName,
+          .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accName,
+          .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accName,
+          .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accName,
+          .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accName,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accName,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accName,
+          .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accName,
+          .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accName,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accName,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accName,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accName {
+            color: #F5F5F5; }
+          .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns,
+          .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns,
+          .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns,
+          .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns,
+          .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns,
+          .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns,
+          .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns,
+          .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns,
+          .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns,
+          .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns,
+          .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns,
+          .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns,
+          .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns,
+          .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns,
+          .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns,
+          .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns {
+            position: relative;
+            top: 1.25rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1.875rem; }
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns a,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns a,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns a,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns a,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns a,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns a,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns a,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns a,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns a,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns a,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns a,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns a,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns a,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns a,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns a,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns a {
+              text-decoration: none;
+              font-family: "Open Sans";
+              font-size: 0.875rem; }
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns a:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns a:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns a:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns a:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns a:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns a:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns a:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns a:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns a:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns a:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns a:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns a:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns a:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns a:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns a:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns a:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns a:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns a:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns a:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns a:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns a:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns a:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns a:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns a:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns a:hover {
+              font-weight: bold; }
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyM,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyM,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyM,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyA {
+              width: 6.25rem;
+              height: 1.875rem;
+              border-radius: 1.5625rem;
+              border: none; }
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .mobileSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider .accSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .mobileSlide .accBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .mobileBtns .btnbuyA:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyM:hover,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider .accSlide .accBtns .btnbuyA:hover {
+              background-color: #707070; }
+        .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1,
+        .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1,
+        .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1,
+        .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 {
+          display: block; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1 .mobileImgContainer,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer {
+            height: 70%; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1 .mobileImgContainer img,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 .mobileImgContainer img {
+              height: 100%;
+              object-fit: cover;
+              border-radius: 1.25rem; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #seeMoreM1,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #seeMoreM1 {
+            color: #400B24; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1 {
+            background-color: #8C2E47; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1 a {
+              color: #F5F5F5; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide1 #mobileBtns1 #btnBuy1:hover {
+            background-color: #707070; }
+        .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2,
+        .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2,
+        .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2,
+        .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 {
+          display: none; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2 .mobileImgContainer,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer {
+            height: 70%; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2 .mobileImgContainer img,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 .mobileImgContainer img {
+              height: 100%;
+              object-fit: cover;
+              border-radius: 1.25rem; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #seeMoreM2,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #seeMoreM2 {
+            color: #400B24; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2 {
+            background-color: #8C2E47; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2 a {
+              color: #F5F5F5; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide2 #mobileBtns2 #btnBuy2:hover {
+            background-color: #707070; }
+        .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3,
+        .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3,
+        .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3,
+        .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 {
+          display: none; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3 .mobileImgContainer,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer {
+            height: 70%; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3 .mobileImgContainer img,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 .mobileImgContainer img {
+              height: 100%;
+              object-fit: cover;
+              border-radius: 1.25rem; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #seeMoreM3,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #seeMoreM3 {
+            color: #400B24; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3 {
+            background-color: #8C2E47; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3 a {
+              color: #F5F5F5; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide3 #mobileBtns3 #btnBuy3:hover {
+            background-color: #707070; }
+        .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4,
+        .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4,
+        .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4,
+        .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 {
+          display: none; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4 .mobileImgContainer,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer {
+            height: 70%; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4 .mobileImgContainer img,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 .mobileImgContainer img {
+              height: 100%;
+              object-fit: cover;
+              border-radius: 1.25rem; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #seeMoreM4,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #seeMoreM4 {
+            color: #400B24; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4 {
+            background-color: #8C2E47; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4 a {
+              color: #F5F5F5; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide4 #mobileBtns4 #btnBuy4:hover {
+            background-color: #707070; }
+        .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5,
+        .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5,
+        .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5,
+        .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5,
+        .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 {
+          display: none; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5 .mobileImgContainer,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5 .mobileImgContainer,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5 .mobileImgContainer,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5 .mobileImgContainer,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer {
+            height: 70%; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5 .mobileImgContainer img,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5 .mobileImgContainer img,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5 .mobileImgContainer img,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5 .mobileImgContainer img,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 .mobileImgContainer img {
+              height: 100%;
+              object-fit: cover;
+              border-radius: 1.25rem; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #seeMoreM5,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #seeMoreM5 {
+            color: #400B24; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5 {
+            background-color: #8C2E47; }
+            .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a,
+            .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5 a {
+              color: #F5F5F5; }
+          .container .mobileSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .mobileSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .mobileSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .accesoriesSection .mobileContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .accesoriesSection .accesoriesContainer .mobileSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #mobileSlide5 #mobileBtns5 #btnBuy5:hover {
+            background-color: #707070; }
+      .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1,
+      .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1,
+      .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1,
+      .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 {
+        display: block; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1 .accImgContainer,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1 .accImgContainer,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1 .accImgContainer,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 .accImgContainer {
+          height: 70%; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1 .accImgContainer img,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1 .accImgContainer img,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1 .accImgContainer img,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 .accImgContainer img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.25rem; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #seeMoreA1,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #seeMoreA1,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #seeMoreA1,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #seeMoreA1 {
+          color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1 {
+          background-color: #400B24; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1 a,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1 a,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1 a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1 a {
+            color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide1 #accBtns1 #btnBuyA1:hover {
+          background-color: #707070; }
+      .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2,
+      .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2,
+      .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2,
+      .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 {
+        display: none; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2 .accImgContainer,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2 .accImgContainer,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2 .accImgContainer,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 .accImgContainer {
+          height: 70%; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2 .accImgContainer img,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2 .accImgContainer img,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2 .accImgContainer img,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 .accImgContainer img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.25rem; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #seeMoreA2,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #seeMoreA2,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #seeMoreA2,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #seeMoreA2 {
+          color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2 {
+          background-color: #400B24; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2 a,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2 a,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2 a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2 a {
+            color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide2 #accBtns2 #btnBuyA2:hover {
+          background-color: #707070; }
+      .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3,
+      .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3,
+      .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3,
+      .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 {
+        display: none; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3 .accImgContainer,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3 .accImgContainer,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3 .accImgContainer,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 .accImgContainer {
+          height: 70%; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3 .accImgContainer img,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3 .accImgContainer img,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3 .accImgContainer img,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 .accImgContainer img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.25rem; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #seeMoreA3,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #seeMoreA3,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #seeMoreA3,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #seeMoreA3 {
+          color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3 {
+          background-color: #400B24; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3 a,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3 a,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3 a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3 a {
+            color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide3 #accBtns3 #btnBuyA3:hover {
+          background-color: #707070; }
+      .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4,
+      .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4,
+      .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4,
+      .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 {
+        display: none; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4 .accImgContainer,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4 .accImgContainer,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4 .accImgContainer,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 .accImgContainer {
+          height: 70%; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4 .accImgContainer img,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4 .accImgContainer img,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4 .accImgContainer img,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 .accImgContainer img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.25rem; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #seeMoreA4,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #seeMoreA4,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #seeMoreA4,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #seeMoreA4 {
+          color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4 {
+          background-color: #400B24; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4 a,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4 a,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4 a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4 a {
+            color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide4 #accBtns4 #btnBuyA4:hover {
+          background-color: #707070; }
+      .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5,
+      .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5,
+      .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5,
+      .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 {
+        display: none; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5 .accImgContainer,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5 .accImgContainer,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5 .accImgContainer,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 .accImgContainer {
+          height: 70%; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5 .accImgContainer img,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5 .accImgContainer img,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5 .accImgContainer img,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 .accImgContainer img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.25rem; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #seeMoreA5,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #seeMoreA5,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #seeMoreA5,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #seeMoreA5 {
+          color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5 {
+          background-color: #400B24; }
+          .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5 a,
+          .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5 a,
+          .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5 a,
+          .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5 a {
+            color: #F5F5F5; }
+        .container .mobileSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5:hover,
+        .container .mobileSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5:hover,
+        .container .accesoriesSection .mobileContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5:hover,
+        .container .accesoriesSection .accesoriesContainer .accesoriesSlider #accSlide5 #accBtns5 #btnBuyA5:hover {
+          background-color: #707070; }
+  .container .offersSection {
+    width: 100%;
+    height: 150vh;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .offersSection .offersGrid {
+      width: 90%;
+      height: 120vh;
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+      grid-template-rows: 2fr 6fr 6fr; }
+      .container .offersSection .offersGrid .offersTitle {
+        justify-self: center;
+        grid-column: 2/5;
+        grid-row: 1/2;
+        font-family: "Urbanist";
+        color: #400B24;
+        font-size: 1.625rem; }
+      .container .offersSection .offersGrid .offerGridItem button {
+        background-color: #8C2E47;
+        border-radius: 1.25rem;
+        border: none;
+        height: 2.1875rem;
+        width: 7.5rem; }
+        .container .offersSection .offersGrid .offerGridItem button a {
+          text-decoration: none;
+          font-family: "Open Sans";
+          color: #F5F5F5;
+          font-size: 0.875rem; }
+      .container .offersSection .offersGrid .offerGridItem button:hover {
+        background-color: #707070; }
+      .container .offersSection .offersGrid #offerGridItem1 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.875rem;
+        align-items: center; }
+        .container .offersSection .offersGrid #offerGridItem1 .offerName {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.5rem; }
+        .container .offersSection .offersGrid #offerGridItem1 .offerImgContainer {
+          height: auto; }
+          .container .offersSection .offersGrid #offerGridItem1 .offerImgContainer img {
+            width: 31.25rem;
+            border-radius: 1.875rem; }
+      .container .offersSection .offersGrid #offerGridItem2 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.9375rem;
+        align-items: center; }
+        .container .offersSection .offersGrid #offerGridItem2 .offerName {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.25rem; }
+        .container .offersSection .offersGrid #offerGridItem2 .offerImgContainer {
+          height: auto; }
+          .container .offersSection .offersGrid #offerGridItem2 .offerImgContainer img {
+            width: 12.5rem;
+            border-radius: 0.9375rem; }
+      .container .offersSection .offersGrid #offerGridItem3 {
+        grid-column: 5/6;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.9375rem;
+        align-items: center; }
+        .container .offersSection .offersGrid #offerGridItem3 .offerName {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.25rem; }
+        .container .offersSection .offersGrid #offerGridItem3 .offerImgContainer {
+          height: auto; }
+          .container .offersSection .offersGrid #offerGridItem3 .offerImgContainer img {
+            width: 12.5rem;
+            border-radius: 0.9375rem; }
+      .container .offersSection .offersGrid #offerGridItem4 {
+        grid-column: 4/5;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.9375rem;
+        align-items: center; }
+        .container .offersSection .offersGrid #offerGridItem4 .offerName {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.25rem; }
+        .container .offersSection .offersGrid #offerGridItem4 .offerImgContainer {
+          height: auto; }
+          .container .offersSection .offersGrid #offerGridItem4 .offerImgContainer img {
+            width: 12.5rem;
+            border-radius: 0.9375rem; }
+      .container .offersSection .offersGrid #offerGridItem5 {
+        grid-column: 5/6;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.9375rem;
+        align-items: center; }
+        .container .offersSection .offersGrid #offerGridItem5 .offerName {
+          font-family: "Urbanist";
+          color: #400B24;
+          font-size: 1.25rem; }
+        .container .offersSection .offersGrid #offerGridItem5 .offerImgContainer {
+          height: auto; }
+          .container .offersSection .offersGrid #offerGridItem5 .offerImgContainer img {
+            width: 12.5rem;
+            border-radius: 0.9375rem; }
+  .container .footer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-left: 5%;
+    background-color: #400B24;
+    z-index: 10; }
+    .container .footer .footerGrid {
+      position: absolute;
+      bottom: 0;
+      justify-self: center;
+      width: 90%;
+      height: 80vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 2fr;
+      grid-template-rows: 9fr 1fr; }
+      .container .footer .footerGrid .column1 .logoFooter {
+        font-family: "Oswald";
+        color: #F5F5F5;
+        font-size: 2.1875rem;
+        text-decoration: none; }
+      .container .footer .footerGrid .column1 .logoFooter:hover {
+        font-weight: bold; }
+      .container .footer .footerGrid .column2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding-top: 1.25rem; }
+        .container .footer .footerGrid .column2 .cTitle {
+          font-family: "Open Sans";
+          color: #F5F5F5;
+          font-size: 1.25rem; }
+        .container .footer .footerGrid .column2 ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.875rem; }
+          .container .footer .footerGrid .column2 ul li a {
+            font-family: "Urbanist";
+            color: #F5F5F5;
+            font-size: 1rem;
+            text-decoration: none; }
+          .container .footer .footerGrid .column2 ul li a:hover {
+            font-weight: bold; }
+      .container .footer .footerGrid .column3 {
+        padding-top: 1.25rem; }
+        .container .footer .footerGrid .column3 ul {
+          float: right;
+          display: flex;
+          flex-direction: row;
+          gap: 3.125rem; }
+          .container .footer .footerGrid .column3 ul li a i {
+            color: #F5F5F5;
+            font-size: 2.5rem; }
+          .container .footer .footerGrid .column3 ul li a i:hover {
+            color: #a3a3a3; }
+      .container .footer .footerGrid p {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        position: relative;
+        left: 75%;
+        font-family: "Urbanist";
+        color: #F5F5F5;
+        font-size: 0.875rem; }
