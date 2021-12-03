@@ -2,49 +2,10 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="navbar">
-                <div class="navbarGrid">
-                    <div class="navbarLeft">
-                        <p class="option" id="option1">CELULARES</p>
-                        <p class="option" id="option2">WATCHES</p>
-                        <p class="option" id="option3">BUDS</p>
-                        <p class="option" id="option4">ACCESORIOS</p>
-                    </div>
-                    <div class="navbarMiddle">
-                        <a class="logo" href="/">XEON</a>
-                    </div>
-                    <div class="navbarRight">
-                        <a class="optionRight" href="#">INGRESAR</a>
-                        <a class="optionRight" href="#">REGISTRARSE</a>
-                        <button id="find"><i class="fas fa-search"></i><span>BUSCAR</span></button>
-                        <a id="iconCar" href="#"><i class="fas fa-shopping-cart"></i></a>
-                        <a id="iconUser" href="#"><i class="fas fa-user-circle"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div id="dropdownNav">
-                <div class="navLeftPanel">
-                    <h2 id="titleOp"></h2>
-                    <ul id="leftList">
-                        
-                    </ul>
-                </div>
-                <div class="navRightPanel">
-                    <ul class="rightList">
-                    </ul>
-                </div>
-                <div class="rightFrame">
-                    <button id='btnClose' onclick="btnClose()"><i class="fas fa-times"></i></button>
-                    <div class="productExample">
-                        <div class="exampleImgContainer">
-                            <img id="exampleImg" src="" alt="">
-                        </div>
-                        <h2 id="exampleTitle"></h2>
-                        <a id="exSM" href="">Ver más</a>
-                    </div>
-                </div>
-                <div class="goUp"></div>
-            </div>
+            <%- include('partials/navbar')  %> 
+
+            <%- include('partials/dropdownNav') %> 
+
             <div class="headerSliderContainer">
                 <button id="headerSliderLeft"> < </button>
                 <button id="headerSliderRight"> > </button>
@@ -76,6 +37,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="mobileSection">
             <div class="mobileContainer">
                 <h2 class="mobileTitle">CELULARES</h2>
@@ -206,6 +168,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="offersSection">
             <div class="offersGrid">
                 <h2 class="offersTitle">OFERTAS DEL MES</h2>
@@ -246,43 +209,8 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footerGrid">
-                <div class="column1">
-                    <a class="logoFooter" href="/">XEON</a>
-                </div>
-                <div class="column2">
-                    <h2 class="cTitle">SOBRE NOSOTROS</h2>
-                    <ul>
-                        <li><a href="#">LA EMPRESA</a></li>
-                        <li><a href="#">NEWSLETTER</a></li>
-                        <li><a href="#">EMPLEO</a></li>
-                    </ul>
-                </div>
-                <div class="column2">
-                    <h2 class="cTitle">SOPORTE</h2>
-                    <ul>
-                        <li><a href="#">CONTÁCTANOS</a></li>
-                        <li><a href="#">CHAT ONLINE</a></li>
-                        <li><a href="#">PREGUNTAS FRECUENTES</a></li>
-                    </ul>
-                </div>
-                <div class="column3">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <p>© 2021 XEON, Inc.</p>
-            </div>
-        </div>
+
+        <%- include('partials/footer')  %> 
     </div>
 </body>
 <script src="./js/carouselHeader.js"></script>

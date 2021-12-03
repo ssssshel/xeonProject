@@ -1,6 +1,8 @@
 const express = require('express');
-
+// const bodyParser =  require('body-parser');
 const app = express();
+
+require('dotenv').config();
 
 const port = 3000;
 
@@ -13,6 +15,11 @@ app.use(express.static(__dirname + ('/public')));
 
 //RUTAS
 app.use('/', require('./routes/index'));
+app.use('/menu', require('./routes/products'));
+app.use('/cesta', require('./routes/shoppingCart'));
+app.use('/soporte', require('./routes/support'));
+// app.use('/insertData', require('./routes/devFunctions'));
+
 
 app.listen(port, () =>{
     console.log("Server running", port)

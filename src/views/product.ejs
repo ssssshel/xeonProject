@@ -1,0 +1,47 @@
+<%- include('partials/head', {linkCSS:'/styles/css/styles.css', tituloWeb:'Producto'})  %> 
+<body>
+    <div class="container">
+        <div class="header" style="height: min-content;">
+            <%- include('partials/navbar')  %> 
+            <%- include('partials/dropdownNav') %> 
+        </div>
+        <div class="containerProduct">
+            <div class="panelProduct">
+                <div class="imgProductCont">
+                    <img src="https://m.media-amazon.com/images/I/71non-nrTKS._AC_SX425_.jpg" alt="gxy a72">
+                </div>
+                <div class="productDesc">
+                    <h2 class="productName">SAMSUNG GALAXY A72 - NEGRO</h2>
+                    <p class="productCode">CÓDIGO: 11T-115574</p>
+                    <p class="productPrize">S/. 1899</p>
+                    <div class="memorySelect">
+                        <input type="button" id="mem1" value="128GB"><input type="button" id="mem2" value="256GB">
+                    </div>
+                    <div class="colorSelect">
+                        <input type="button" id="col1" value="Negro"> <input type="button" id="col2" value="Blanco">
+                    </div>
+                    <button id="btnCar">AGREGAR AL CARRITO</button>
+                    <p class="stock">Unidades disponibles: </p>
+                </div>
+            </div>
+            <div class="panelInfo">
+                <h2 class="detailsTitle">DETALLES TÉCNICOS</h2>
+                <ul>
+                    <li class="detail">Tipo: </li>
+                    <li class="detail">Marca: </li>
+                    <li class="detail">Color: </li>
+                    <li class="detail">Memoria Interna: </li>
+                    <li class="detail">Cámara: </li>
+                    <li class="detail">Pantalla: </li>
+                    <li class="detail">Procesador: </li>
+                    <li class="detail">Ram: </li>
+                    <li class="detail">Batería: </li>
+                    <li class="detail">Conectividad: </li>
+                </ul>
+            </div>
+        </div>
+        <%- include('partials/footer')  %> 
+    </div>
+</body>
+<script src="/js/dropdown.js"></script>
+</html>

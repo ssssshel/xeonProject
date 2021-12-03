@@ -1,0 +1,630 @@
+.accesoriesSection {
+    background-color: $bas;
+}
+
+.mobileSection,
+.accesoriesSection {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+
+    .mobileContainer,
+    .accesoriesContainer {
+        position: absolute;
+        bottom: toRem(50);
+        height: 100vh;
+        width: 90%;
+        margin: auto 0 auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: toRem(40);
+
+        .mobileTitle {
+            height: toRem(35);
+            @include fontSettings('Urbanist', $drk, 26);
+        }
+
+        .accesoriesTitle {
+            height: toRem(35);
+            @include fontSettings('Urbanist', $lgt, 26);
+        }
+
+        .mobileOptions,
+        .accesoriesOptions {
+            height: toRem(40);
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            cursor: pointer;
+
+            .mobileOption {
+                @include fontSettings('Urbanist', $drk, 18);
+
+                a {
+                    text-decoration: none;
+                    color: $drk;
+                }
+            }
+
+            .accOption {
+                @include fontSettings('Urbanist', $lgt, 18);
+
+                a {
+                    text-decoration: none;
+                    color: $lgt;
+                }
+            }
+
+            .accOption:hover {
+                font-weight: bold;
+                border-bottom: solid $lgt toRem(3);
+            }
+
+            .mobileOption:hover {
+                height: toRem(25);
+                width: min-content;
+                border-bottom: solid toRem(3) $drk;
+
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .mobileSlider,
+        .accesoriesSlider {
+            height: 100%;
+
+            .mobileSlide,
+            .accSlide {
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .mobileName,
+                .accName {
+                    margin-top: toRem(20);
+                    text-align: center;
+                    font-family: "Urbanist";
+                    font-size: toRem(35);
+                }
+
+                .accName {
+                    color: $lgt;
+                }
+
+                .mobileBtns,
+                .accBtns {
+                    position: relative;
+                    top: toRem(20);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: toRem(30);
+
+                    a {
+                        text-decoration: none;
+                        font-family: "Open Sans";
+                        font-size: toRem(14);
+                    }
+
+                    a:hover {
+                        font-weight: bold;
+                    }
+
+                    .btnbuyM,
+                    .btnbuyA {
+                        width: toRem(100);
+                        height: toRem(30);
+                        border-radius: toRem(25);
+                        border: none;
+                    }
+
+                    .btnbuyM:hover,
+                    .btnbuyA:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #mobileSlide1 {
+                display: block;
+
+                .mobileImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #mobileBtns1 {
+                    #seeMoreM1 {
+                        color: $drk;
+                    }
+
+                    #btnBuy1 {
+                        background-color: $bas;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuy1:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #mobileSlide2 {
+                display: none;
+
+                .mobileImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #mobileBtns2 {
+                    #seeMoreM2 {
+                        color: $drk;
+                    }
+
+                    #btnBuy2 {
+                        background-color: $bas;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuy2:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #mobileSlide3 {
+                display: none;
+
+                .mobileImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #mobileBtns3 {
+                    #seeMoreM3 {
+                        color: $drk;
+                    }
+
+                    #btnBuy3 {
+                        background-color: $bas;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuy3:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #mobileSlide4 {
+                display: none;
+
+                .mobileImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #mobileBtns4 {
+                    #seeMoreM4 {
+                        color: $drk;
+                    }
+
+                    #btnBuy4 {
+                        background-color: $bas;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuy4:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #mobileSlide5 {
+                display: none;
+
+                .mobileImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #mobileBtns5 {
+                    #seeMoreM5 {
+                        color: $drk;
+                    }
+
+                    #btnBuy5 {
+                        background-color: $bas;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuy5:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+        }
+
+        .accesoriesSlider {
+            #accSlide1 {
+                display: block;
+
+                .accImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #accBtns1 {
+                    #seeMoreA1 {
+                        color: $lgt;
+                    }
+
+                    #btnBuyA1 {
+                        background-color: $drk;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuyA1:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #accSlide2 {
+                display: none;
+
+                .accImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #accBtns2 {
+                    #seeMoreA2 {
+                        color: $lgt;
+                    }
+
+                    #btnBuyA2 {
+                        background-color: $drk;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuyA2:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #accSlide3 {
+                display: none;
+
+                .accImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #accBtns3 {
+                    #seeMoreA3 {
+                        color: $lgt;
+                    }
+
+                    #btnBuyA3 {
+                        background-color: $drk;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuyA3:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #accSlide4 {
+                display: none;
+
+                .accImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #accBtns4 {
+                    #seeMoreA4 {
+                        color: $lgt;
+                    }
+
+                    #btnBuyA4 {
+                        background-color: $drk;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuyA4:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+
+            #accSlide5 {
+                display: none;
+
+                .accImgContainer {
+                    height: 70%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: toRem(20);
+                    }
+                }
+
+                #accBtns5 {
+                    #seeMoreA5 {
+                        color: $lgt;
+                    }
+
+                    #btnBuyA5 {
+                        background-color: $drk;
+
+                        a {
+                            color: $lgt;
+                        }
+                    }
+
+                    #btnBuyA5:hover {
+                        background-color: #707070;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offersSection {
+    width: 100%;
+    height: 150vh;
+    background-color: $lgt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .offersGrid {
+        width: 90%;
+        height: 120vh;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+        grid-template-rows: 2fr 6fr 6fr;
+
+        .offersTitle {
+            justify-self: center;
+            grid-column: 2/5;
+            grid-row: 1/2;
+            @include fontSettings('Urbanist', $drk, 26);
+        }
+
+        .offerGridItem {
+
+            button {
+                background-color: $bas;
+                border-radius: toRem(20);
+                border: none;
+                height: toRem(35);
+                width: toRem(120);
+
+                a {
+                    text-decoration: none;
+                    @include fontSettings('Open Sans', $lgt, 14)
+                }
+            }
+
+            button:hover {
+                background-color: #707070;
+            }
+        }
+
+        #offerGridItem1 {
+            grid-column: 1/3;
+            grid-row: 2/4;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: toRem(30);
+            align-items: center;
+
+            .offerName {
+                @include fontSettings('Urbanist', $drk, 24)
+            }
+
+            .offerImgContainer {
+                height: auto;
+
+                img {
+                    width: toRem(500);
+                    border-radius: toRem(30);
+                }
+            }
+        }
+
+        #offerGridItem2 {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: toRem(15);
+            align-items: center;
+
+            .offerName {
+                @include fontSettings('Urbanist', $drk, 20)
+            }
+
+            .offerImgContainer {
+                height: auto;
+
+                img {
+                    width: toRem(200);
+                    border-radius: toRem(15);
+                }
+            }
+        }
+
+        #offerGridItem3 {
+            grid-column: 5/6;
+            grid-row: 2/3;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: toRem(15);
+            align-items: center;
+
+            .offerName {
+                @include fontSettings('Urbanist', $drk, 20)
+            }
+
+            .offerImgContainer {
+                height: auto;
+
+                img {
+                    width: toRem(200);
+                    border-radius: toRem(15);
+                }
+            }
+        }
+
+        #offerGridItem4 {
+            grid-column: 4/5;
+            grid-row: 3/4;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: toRem(15);
+            align-items: center;
+
+            .offerName {
+                @include fontSettings('Urbanist', $drk, 20)
+            }
+
+            .offerImgContainer {
+                height: auto;
+
+                img {
+                    width: toRem(200);
+                    border-radius: toRem(15);
+                }
+            }
+        }
+
+        #offerGridItem5 {
+            grid-column: 5/6;
+            grid-row: 3/4;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: toRem(15);
+            align-items: center;
+
+            .offerName {
+                @include fontSettings('Urbanist', $drk, 20)
+            }
+
+            .offerImgContainer {
+                height: auto;
+
+                img {
+                    width: toRem(200);
+                    border-radius: toRem(15);
+                }
+            }
+        }
+    }
+}

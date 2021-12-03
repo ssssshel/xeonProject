@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -13,1167 +14,380 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $lgt;
 
     * {
         overflow: hidden;
     }
 
-    .header {
+    .shoppingBody{
         width: 100%;
-        height: 100vh;
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: toRem(70);
-            padding-left: toRem(45);
-            padding-right: toRem(45);
-            background-color: $lgt;
-            box-sizing: border-box;
-            z-index: 5;
-
-            .navbarGrid {
-                display: grid;
-                grid-template-columns: 1.3fr 1fr 1.3fr;
-                grid-template-rows: toRem(70);
-                align-items: center;
-
-
-                .navbarLeft {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    justify-content: space-between;
-
-                    .option {
-                        text-decoration: none;
-                        @include fontSettings("Urbanist", $drk, 16);
-                    }
-
-                    .option:hover {
-                        color: #707070;
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                }
-
-                .navbarMiddle {
-                    display: flex;
-                    justify-content: center;
-
-                    .logo {
-                        text-decoration: none;
-                        @include fontSettings("Oswald", #707070, 35)
-                    }
-
-                    .logo:hover {
-                        color: $drk;
-                        font-weight: bold;
-                    }
-                }
-
-                .navbarRight {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    justify-content: space-between;
-
-                    .optionRight {
-                        text-decoration: none;
-                        @include fontSettings("Urbanist", $drk, 16);
-                        align-self: center;
-                    }
-
-                    .optionRight:hover {
-                        color: #707070;
-                        font-weight: bold;
-                    }
-
-                    #find {
-                        background-color: $drk;
-                        width: toRem(110);
-                        height: toRem(85);
-                        padding-left: toRem(10);
-                        border: none;
-                        display: flex;
-                        gap: toRem(10);
-                        align-items: center;
-                        cursor: pointer;
-
-                        i {
-                            color: $lgt;
-                        }
-
-                        span {
-                            @include fontSettings("Urbanist", $lgt, 16);
-                            text-decoration: none;
-                        }
-                    }
-
-                    #iconCar,
-                    #iconUser {
-                        text-decoration: none;
-                        color: $drk;
-                        align-self: center;
-                    }
-
-                    #iconCar:hover,
-                    #iconUser:hover {
-                        color: #707070;
-                    }
-
-                    #iconCar {
-                        i {
-                            font-size: toRem(18);
-                        }
-                    }
-
-                    #iconUser {
-                        i {
-                            font-size: toRem(30);
-                        }
-                    }
-
-                    #find:hover {
-                        background-color: #707070;
-                    }
-                }
-            }
-
-            .navbarGrid>div {
-                display: flex;
-            }
-        }
-
-        #dropdownNav {
-            display: none;
-            height: 100vh;
-            width: 100%;
-            padding-top: toRem(100);
-            padding-left: toRem(45);
-            padding-right: toRem(45);
-            position: fixed;
-            top: toRem(0);
-            grid-template-columns: 3fr 5fr 5fr;
-            grid-template-rows: 90vh 10vh;
-            z-index: 3;
-            background-color: $lgt;
-            backdrop-filter: blur(15px);
-
-            .navLeftPanel {
-                display: flex;
-                flex-direction: column;
-                grid-column: 1/2;
-                grid-row: 1/2;
-                gap: toRem(30);
-
-                #titleOp {
-                    @include fontSettings("Urbanist", $drk, 24);
-                    border-bottom: solid $drk toRem(3);
-                    width: min-content;
-                }
-
-                #leftList {
-                    display: flex;
-                    flex-direction: column;
-                    gap: toRem(30);
-
-                    .brandOp {
-                        @include fontSettings("Open Sans", $drk, 16)
-                    }
-
-                    .brandOp:hover {
-                        cursor: pointer;
-                        font-weight: bold;
-                        border-bottom: solid $drk toRem(1);
-                        width: min-content;
-                    }
-                }
-            }
-
-            .navRightPanel {
-                grid-column: 2/3;
-                grid-row: 1/2;
-
-                .rightList {
-                    display: none;
-                    border-left: solid $drk toRem(1);
-                    height: min-content;
-                    padding-left: toRem(45);
-                    position: relative;
-                    top: toRem(60);
-                    flex-direction: column;
-                    gap: toRem(30);
-
-                    .productOp {
-                        @include fontSettings("Urbanist", $drk, 18);
-
-                        a {
-                            text-decoration: none;
-                            color: $drk;
-                        }
-
-                        a:hover {
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-
-            .rightFrame {
-                grid-column: 3/4;
-                grid-row: 1/2;
-                display: flex;
-                justify-content: right;
-                gap: toRem(10);
-                border-left: solid $drk toRem(1);
-
-                #btnClose {
-                    position: absolute;
-                    border: none;
-                    background-color: transparent;
-                    cursor: pointer;
-
-                    .fa-times {
-
-                        font-size: toRem(25);
-                    }
-                }
-
-
-                .productExample {
-                    height: 80vh;
-                    width: 85%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: toRem(30);
-
-                    .exampleImgContainer {
-                        height: auto;
-
-                        #exampleImg {
-                            width: toRem(400);
-                            height: auto;
-                            border-radius: toRem(10);
-                        }
-                    }
-
-                    @supports (object-fit: cover) {
-                        .exampleImgContainer {
-                            object-fit: cover;
-                            object-position: center center;
-                        }
-                    }
-
-                    #exampleTitle {
-                        @include fontSettings('Urbanist', $drk, 20)
-                    }
-
-                    #exSM {
-                        @include fontSettings('Open Sans', $drk, 16);
-                        font-weight: bold;
-                        text-decoration: none;
-                    }
-
-                    #exSM:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            .goUp {
-                grid-column: 1/4;
-                grid-row: 2/3;
-                width: 100%;
-                height: 10vh;
-                position: absolute;
-                bottom: toRem(100);
-            }
-        }
-
-        .headerSliderContainer {
-            width: 100%;
-            box-sizing: border-box;
-
-
-            #headerSliderLeft,
-            #headerSliderRight {
-                position: absolute;
-                bottom: toRem(300);
-                width: toRem(35);
-                height: toRem(35);
-                background-color: rgba(88, 81, 81, 0.301);
-                backdrop-filter: blur(2px);
-                border: none;
-                border-radius: toRem(50);
-                cursor: pointer;
-                @include fontSettings("Open Sans", $lgt, 20)
-            }
-
-            #headerSliderLeft:hover,
-            #headerSliderRight:hover {
-                background-color: #707070;
-            }
-
-            #headerSliderLeft {
-                left: toRem(40);
-            }
-
-            #headerSliderRight {
-                right: toRem(40);
-            }
-
-
-            .headerSlider {
-                #headerSlide1 {
-                    display: none;
-                    padding-top: toRem(70);
-
-                    #textSlide1 {
-                        position: absolute;
-                        bottom: toRem(100);
-                        left: toRem(120);
-                        line-height: toRem(50);
-
-                        h2 {
-                            @include fontSettings("Urbanist", $drk, 40);
-                        }
-
-                        p {
-                            @include fontSettings("Open Sans", $drk, 24);
-                        }
-                    }
-
-                    #seeMore1 {
-                        position: absolute;
-                        bottom: toRem(50);
-                        left: toRem(120);
-                        width: toRem(100);
-                        height: toRem(35);
-                        @include fontSettings("Urbanist", $lgt, 16);
-                        background-color: $drk;
-                        border: none;
-                        border-radius: toRem(50);
-                    }
-
-                    #seeMore1:hover {
-                        background-color: #707070;
-                    }
-
-                    img {
-                        width: 105%;
-                        object-fit: cover;
-                    }
-                }
-
-                #headerSlide2 {
-                    display: none;
-                    padding-top: toRem(0);
-
-                    #textSlide2 {
-                        position: absolute;
-                        bottom: toRem(100);
-                        left: toRem(120);
-                        line-height: toRem(50);
-
-                        h2 {
-                            @include fontSettings("Urbanist", $lgt, 40);
-                        }
-
-                        p {
-                            @include fontSettings("Open Sans", $lgt, 24);
-                        }
-                    }
-
-                    #seeMore2 {
-                        position: absolute;
-                        bottom: toRem(50);
-                        left: toRem(120);
-                        width: toRem(100);
-                        height: toRem(35);
-                        @include fontSettings("Urbanist", $lgt, 16);
-                        background-color: $bas;
-                        border: none;
-                        border-radius: toRem(50);
-                    }
-
-                    #seeMore2:hover {
-                        background-color: #707070;
-                    }
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
-                #headerSlide3 {
-                    display: none;
-                    padding-top: toRem(80);
-
-
-                    #textSlide3 {
-                        position: absolute;
-                        bottom: toRem(100);
-                        left: toRem(120);
-                        line-height: toRem(50);
-
-                        h2 {
-                            @include fontSettings("Urbanist", $drk, 40);
-                        }
-
-                        p {
-                            @include fontSettings("Open Sans", $drk, 24);
-                        }
-                    }
-
-                    #seeMore3 {
-                        position: absolute;
-                        bottom: toRem(50);
-                        left: toRem(120);
-                        width: toRem(100);
-                        height: toRem(35);
-                        @include fontSettings("Urbanist", $lgt, 16);
-                        background-color: $drk;
-                        border: none;
-                        border-radius: toRem(50);
-                    }
-
-                    #seeMore3:hover {
-                        background-color: #707070;
-                    }
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-            }
-
-
-        }
-    }
-
-    .accesoriesSection {
-        background-color: $bas;
-    }
-
-    .mobileSection,
-    .accesoriesSection {
-        position: relative;
-        width: 100%;
-        height: 130vh;
-        display: flex;
-        justify-content: center;
-
-        .mobileContainer,
-        .accesoriesContainer {
-            position: absolute;
-            bottom: toRem(50);
-            height: 100vh;
-            width: 90%;
-            margin: auto 0 auto 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: toRem(40);
-
-            .mobileTitle {
-                height: toRem(35);
-                @include fontSettings('Urbanist', $drk, 26);
-            }
-
-            .accesoriesTitle {
-                height: toRem(35);
-                @include fontSettings('Urbanist', $lgt, 26);
-            }
-
-            .mobileOptions,
-            .accesoriesOptions {
-                height: toRem(40);
-                width: 70%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                cursor: pointer;
-
-                .mobileOption {
-                    @include fontSettings('Urbanist', $drk, 18);
-
-                    a {
-                        text-decoration: none;
-                        color: $drk;
-                    }
-                }
-
-                .accOption {
-                    @include fontSettings('Urbanist', $lgt, 18);
-
-                    a {
-                        text-decoration: none;
-                        color: $lgt;
-                    }
-                }
-
-                .accOption:hover {
-                    font-weight: bold;
-                    border-bottom: solid $lgt toRem(3);
-                }
-
-                .mobileOption:hover {
-                    height: toRem(25);
-                    width: min-content;
-                    border-bottom: solid toRem(3) $drk;
-
-                    a {
-                        font-weight: bold;
-                    }
-                }
-            }
-
-            .mobileSlider,
-            .accesoriesSlider {
-                height: 100%;
-
-                .mobileSlide,
-                .accSlide {
-                    height: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-evenly;
-
-                    .mobileName,
-                    .accName {
-                        margin-top: toRem(20);
-                        text-align: center;
-                        font-family: "Urbanist";
-                        font-size: toRem(35);
-                    }
-
-                    .accName {
-                        color: $lgt;
-                    }
-
-                    .mobileBtns,
-                    .accBtns {
-                        position: relative;
-                        top: toRem(20);
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        gap: toRem(30);
-
-                        a {
-                            text-decoration: none;
-                            font-family: "Open Sans";
-                            font-size: toRem(14);
-                        }
-
-                        a:hover {
-                            font-weight: bold;
-                        }
-
-                        .btnbuyM,
-                        .btnbuyA {
-                            width: toRem(100);
-                            height: toRem(30);
-                            border-radius: toRem(25);
-                            border: none;
-                        }
-
-                        .btnbuyM:hover,
-                        .btnbuyA:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #mobileSlide1 {
-                    display: block;
-
-                    .mobileImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #mobileBtns1 {
-                        #seeMoreM1 {
-                            color: $drk;
-                        }
-
-                        #btnBuy1 {
-                            background-color: $bas;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuy1:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #mobileSlide2 {
-                    display: none;
-
-                    .mobileImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #mobileBtns2 {
-                        #seeMoreM2 {
-                            color: $drk;
-                        }
-
-                        #btnBuy2 {
-                            background-color: $bas;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuy2:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #mobileSlide3 {
-                    display: none;
-
-                    .mobileImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #mobileBtns3 {
-                        #seeMoreM3 {
-                            color: $drk;
-                        }
-
-                        #btnBuy3 {
-                            background-color: $bas;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuy3:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #mobileSlide4 {
-                    display: none;
-
-                    .mobileImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #mobileBtns4 {
-                        #seeMoreM4 {
-                            color: $drk;
-                        }
-
-                        #btnBuy4 {
-                            background-color: $bas;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuy4:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #mobileSlide5 {
-                    display: none;
-
-                    .mobileImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #mobileBtns5 {
-                        #seeMoreM5 {
-                            color: $drk;
-                        }
-
-                        #btnBuy5 {
-                            background-color: $bas;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuy5:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-            }
-
-            .accesoriesSlider {
-                #accSlide1 {
-                    display: block;
-
-                    .accImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #accBtns1 {
-                        #seeMoreA1 {
-                            color: $lgt;
-                        }
-
-                        #btnBuyA1 {
-                            background-color: $drk;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuyA1:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #accSlide2 {
-                    display: none;
-
-                    .accImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #accBtns2 {
-                        #seeMoreA2 {
-                            color: $lgt;
-                        }
-
-                        #btnBuyA2 {
-                            background-color: $drk;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuyA2:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #accSlide3 {
-                    display: none;
-
-                    .accImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #accBtns3 {
-                        #seeMoreA3 {
-                            color: $lgt;
-                        }
-
-                        #btnBuyA3 {
-                            background-color: $drk;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuyA3:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #accSlide4 {
-                    display: none;
-
-                    .accImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #accBtns4 {
-                        #seeMoreA4 {
-                            color: $lgt;
-                        }
-
-                        #btnBuyA4 {
-                            background-color: $drk;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuyA4:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-
-                #accSlide5 {
-                    display: none;
-
-                    .accImgContainer {
-                        height: 70%;
-
-                        img {
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: toRem(20);
-                        }
-                    }
-
-                    #accBtns5 {
-                        #seeMoreA5 {
-                            color: $lgt;
-                        }
-
-                        #btnBuyA5 {
-                            background-color: $drk;
-
-                            a {
-                                color: $lgt;
-                            }
-                        }
-
-                        #btnBuyA5:hover {
-                            background-color: #707070;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .offersSection {
-        width: 100%;
-        height: 150vh;
-        background-color: $lgt;
+        height: auto;
+        min-height: 100vh;
+        background-color: transparent;
+        padding: toRem(70) toRem(45);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .offersGrid {
-            width: 90%;
-            height: 120vh;
-            display: grid;
-            grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
-            grid-template-rows: 2fr 6fr 6fr;
-
-            .offersTitle {
-                justify-self: center;
-                grid-column: 2/5;
-                grid-row: 1/2;
-                @include fontSettings('Urbanist', $drk, 26);
-            }
-
-            .offerGridItem {
-
-                button {
-                    background-color: $bas;
-                    border-radius: toRem(20);
-                    border: none;
-                    height: toRem(35);
-                    width: toRem(120);
-
-                    a {
-                        text-decoration: none;
-                        @include fontSettings('Open Sans', $lgt, 14)
-                    }
-                }
-
-                button:hover {
-                    background-color: #707070;
-                }
-            }
-
-            #offerGridItem1 {
-                grid-column: 1/3;
-                grid-row: 2/4;
-                justify-self: center;
-                align-self: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: toRem(30);
-                align-items: center;
-
-                .offerName {
-                    @include fontSettings('Urbanist', $drk, 24)
-                }
-
-                .offerImgContainer {
-                    height: auto;
-
-                    img {
-                        width: toRem(500);
-                        border-radius: toRem(30);
-                    }
-                }
-            }
-
-            #offerGridItem2 {
-                grid-column: 4/5;
-                grid-row: 2/3;
-                justify-self: center;
-                align-self: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: toRem(15);
-                align-items: center;
-
-                .offerName {
-                    @include fontSettings('Urbanist', $drk, 20)
-                }
-
-                .offerImgContainer {
-                    height: auto;
-
-                    img {
-                        width: toRem(200);
-                        border-radius: toRem(15);
-                    }
-                }
-            }
-
-            #offerGridItem3 {
-                grid-column: 5/6;
-                grid-row: 2/3;
-                justify-self: center;
-                align-self: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: toRem(15);
-                align-items: center;
-
-                .offerName {
-                    @include fontSettings('Urbanist', $drk, 20)
-                }
-
-                .offerImgContainer {
-                    height: auto;
-
-                    img {
-                        width: toRem(200);
-                        border-radius: toRem(15);
-                    }
-                }
-            }
-
-            #offerGridItem4 {
-                grid-column: 4/5;
-                grid-row: 3/4;
-                justify-self: center;
-                align-self: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: toRem(15);
-                align-items: center;
-
-                .offerName {
-                    @include fontSettings('Urbanist', $drk, 20)
-                }
-
-                .offerImgContainer {
-                    height: auto;
-
-                    img {
-                        width: toRem(200);
-                        border-radius: toRem(15);
-                    }
-                }
-            }
-
-            #offerGridItem5 {
-                grid-column: 5/6;
-                grid-row: 3/4;
-                justify-self: center;
-                align-self: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: toRem(15);
-                align-items: center;
-
-                .offerName {
-                    @include fontSettings('Urbanist', $drk, 20)
-                }
-
-                .offerImgContainer {
-                    height: auto;
-
-                    img {
-                        width: toRem(200);
-                        border-radius: toRem(15);
-                    }
-                }
-            }
+        gap: toRem(50);
+        .shoppingCartTitle{
+            @include fontSettings("Urbanist", $drk, 30);
         }
-    }
-
-    .footer {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        padding-left: 5%;
-        background-color: $drk;
-        z-index: 10;
-
-        .footerGrid {
-            position: absolute;
-            bottom: 0;
-            justify-self: center;
-            width: 90%;
-            height: 80vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 2fr;
-            grid-template-rows: 9fr 1fr;
-
-            .column1 {
-                .logoFooter {
-                    @include fontSettings("Oswald", $lgt, 35);
-                    text-decoration: none;
+        table{
+            border: solid toRem(1) $drk;
+            tr{
+                th{
+                    @include fontSettings("Urbanist", $drk, 18);
+                    height: toRem(60);
+                    border-bottom: solid $drk toRem(1);
+                }
+                td{
+                    height: toRem(130);
+                }
+                .productColumn{
+                    width: 40%;
+                    
+                }
+                .codeColumn{
+                    width: 15%;
+                }
+                .qntColumn{
+                    width: 20%;
+                }
+                .totalColumn{
+                    width: 25%;
                 }
 
-                .logoFooter:hover {
-                    font-weight: bold;
-                }
-            }
 
-            .column2 {
-                display: flex;
-                flex-direction: column;
-                gap: toRem(40);
-                padding-top: toRem(20);
-
-
-                .cTitle {
-                    @include fontSettings("Open Sans", $lgt, 20);
-                }
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: toRem(30);
-
-                    li {
-                        a {
-                            @include fontSettings("Urbanist", $lgt, 16);
-                            text-decoration: none;
-                        }
-
-                        a:hover {
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-
-            .column3 {
-                padding-top: toRem(20);
-
-                ul {
-                    float: right;
+                .productDef{
                     display: flex;
                     flex-direction: row;
                     gap: toRem(50);
-
-                    li {
-                        a {
-                            i {
-                                color: $lgt;
-                                font-size: toRem(40);
-                            }
-
-                            i:hover {
-                                color: #a3a3a3;
-                            }
+                    align-items: center;
+                    padding-top: toRem(30);
+                    padding-left: toRem(30);
+                    .productImgCont{
+                        width: toRem(100);
+                        img{
+                            width: toRem(100)
                         }
+                    }
+                    
+                    .productDefName{
+                        @include fontSettings("Urbanist", $drk, 18);
+                        font-weight: bold;
+                    }
+                }
+                .productCode{
+                    @include fontSettings("Urbanist", $drk, 16);
+                    font-weight: bold;
+                    padding-bottom: toRem(30);
+                }
+                .productQnt{
+                    padding-bottom: toRem(30);
+                    input{
+                        position: relative;
+                        left: toRem(70);
+                        @include fontSettings("Urbanist", $drk, 16);
+                        font-weight: bold;
+                        height: toRem(25);
+                        width: toRem(100);
+                        
+                    }
+                }
+                .productDefPrize{
+                    padding-left: toRem(50);
+                    display: inline-flex;
+                    gap: toRem(70);
+                    align-items: baseline;
+                    .defPrize{
+                        @include fontSettings("Urbanist", $drk, 16)
+                    }
+                    .delProduct{
+                        @include fontSettings("Open Sans", $drk, 16);
+                        cursor: pointer;
                     }
                 }
             }
+        }
+    }
 
-            p {
-                grid-column: 4/5;
-                grid-row: 2/3;
-                position: relative;
-                left: 75%;
-                @include fontSettings("Urbanist", $lgt, 14)
+    //MENU
+    .containerMenu {
+        width: 90%;
+        height: auto;
+        min-height: 150vh;
+        display: grid;
+        padding-top: toRem(70);
+        grid-template-columns: 3fr 10fr;
+        grid-template-rows: auto;
+
+        .filtersPanel {
+            height: 150vh;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding-top: toRem(70);
+            border-right: solid $drk toRem(1);
+
+            .filtersElements {
+                padding-right: toRem(100);
+                display: flex;
+                flex-direction: column;
+                gap: toRem(30);
+
+                .filtersTitle {
+                    @include fontSettings("Urbanist", $drk, 26);
+                }
+
+                .filter1,
+                .filter2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(15);
+
+                    .filterTitle {
+                        @include fontSettings("Urbanist", $drk, 20)
+                    }
+
+                    .filter1Options,
+                    .filter2Options {
+                        display: flex;
+                        flex-direction: column;
+                        gap: toRem(10);
+
+                        .filter1Option,
+                        .filter2Option {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            @include fontSettings("Open Sans", $drk, 15)
+                        }
+                    }
+                }
+
+                .filter2 {
+                    height: 10%;
+
+                    .filter2Options {
+
+                        overflow-y: visible;
+                    }
+                }
+
+                .filter3 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(20);
+
+                    .filterTitle {
+                        @include fontSettings("Urbanist", $drk, 20)
+                    }
+
+                    input[type="number"] {
+                        width: toRem(100);
+                        height: toRem(30);
+                        appearance: textfield;
+                    }
+
+                    input[type=number]::-webkit-inner-spin-button,
+                    input[type=number]::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                    }
+
+                    span {
+                        @include fontSettings("Open Sans", $drk, 15);
+                    }
+                }
+            }
+        }
+
+        .productsPanel {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: max-content;
+            column-gap: toRem(50);
+            row-gap: toRem(50);
+            padding-top: toRem(50);
+
+            .productGrid {
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                align-items: center;
+                gap: toRem(15);
+
+
+                .productImgCont {
+                    position: relative;
+                    width: toRem(200);
+                    height: toRem(250);
+
+                    img {
+                        width: toRem(200);
+                    }
+                }
+
+                .productName {
+                    @include fontSettings("Urbanist", $drk, 18);
+                    font-weight: bold;
+                }
+
+                .productPrize {
+                    @include fontSettings("Urbanist", $drk, 16);
+                    font-weight: bold;
+                }
+
+                .productSpecs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(10);
+
+                    .productSpec {
+                        @include fontSettings("Urbanist", $drk, 14)
+                    }
+                }
+
+                .btnBuy {
+                    background-color: $bas;
+                    border: none;
+                    border-radius: toRem(30);
+                    width: toRem(100);
+                    height: toRem(35);
+
+                    a {
+                        @include fontSettings("Open Sans", $lgt, 14);
+                        text-decoration: none;
+                    }
+                }
+
+                .btnBuy:hover {
+                    background-color: #707070
+                }
+            }
+
+            .productGrid:hover {
+                border: solid $drk toRem(1);
             }
         }
     }
+
+    //PRODUCTO
+    .containerProduct{
+        position: relative;
+        top: toRem(70);
+        width: 100%;
+        height: min-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90vh 100vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        .panelProduct{
+            display: grid;
+            grid-template-columns: 6fr 1fr 7fr;
+            grid-template-rows: 100vh;
+            .imgProductCont{
+                grid-column: 1/2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: toRem(50);
+                img{
+                    max-height: 60vh;
+                    
+                }
+            }
+            .productDesc{
+                grid-column: 3/4;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;     
+                gap: toRem(15);
+                margin-bottom: toRem(50);
+                .productName{
+                    @include fontSettings("Urbanist", $drk, 30)
+                }
+                .productCode{
+                    @include fontSettings("Urbanist", $drk, 14)
+                }
+                .productPrize{
+                    @include fontSettings("Urbanist", drk, 26)
+                }
+                .memorySelect{
+                    input{
+                        width: toRem(70);
+                        height: toRem(30);
+                        margin-right: toRem(15);
+                        @include fontSettings("Urbanist", $drk, 16);
+                        background-color: transparent;
+                        border: solid toRem(1) $drk;
+                    }
+                    input:hover{
+                        background-color: #707070;
+
+                    }
+                }
+                .colorSelect{
+                    input{
+                        width: toRem(70);
+                        height: toRem(30);
+                        margin-right: toRem(15);
+                        @include fontSettings("Urbanist", $drk, 16);
+                        background-color: transparent;
+                        border: solid toRem(1) $drk;
+                    }
+                    input:hover{
+                        background-color: #707070;
+
+                    }
+                }
+
+                #btnCar{
+                    width: toRem(150);
+                    height: toRem(50);
+                    margin-right: toRem(15);
+                    @include fontSettings("Urbanist", $lgt, 16);
+                    background-color: $bas;
+                    border: none;
+                }
+
+                #btnCar:hover{
+                    background-color: #707070;
+                    font-weight: bold;
+                }
+
+                .stock{
+                    @include fontSettings("Urbanist", $drk, 14);
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .panelInfo{
+            display: flex;
+            flex-direction: column;
+            gap: toRem(20);
+            .detailsTitle{
+                @include fontSettings("Urbanist", $drk, 26)
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: toRem(20);
+                .detail{
+                    @include fontSettings("Open Sans", $drk, 16)
+                }
+            }
+        }
+    }
+
+
+    //INDEX
+    @import "components/index";
+
+    @import "components/header";
+
+    @import "components/footer";
 }

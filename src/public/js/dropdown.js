@@ -27,17 +27,12 @@ function submenuCont(id){
         if(id == 'b1'){
             rightList.innerHTML = '<li class="productOp">Apple watch Series 6</li>'
         }
-    }else if(list.getAttribute('data-id') == 'c'){
-
-    }else if(list.getAttribute('data-id') == 'd'){
-
     }
 }
 
 function closeSubmenu(){
     dropdown.addEventListener('mouseleave', () => {
         rightList.style.display = 'none'
-        // document.querySelector('.rightFrame').style.display = 'none';
     })
 }
 
@@ -56,20 +51,21 @@ function goDown(){
                 list.innerHTML = "<li class='brandOp' data-id='a1' onmouseover=submenuCont('a1')>Destacados</li> <li class='brandOp' data-id='a2' onmouseover=submenuCont('a2')>Samsung</li> <li class='brandOp' data-id='a3' onmouseover=submenuCont('a3')>Apple</li> <li class='brandOp' data-id='a4' onmouseover=submenuCont('a4')>Xiaomi</li> <li class='brandOp' data-id='a5' onmouseover=submenuCont('a5')>Motorola</li> <li class='brandOp' data-id'A6' onmouseover=submenuCont('a6')>Huawei</li>"; 
                 list.setAttribute('data-id', 'a');
                 exampleContent('https://www.muycomputer.com/wp-content/uploads/2021/01/Samsung-Galaxy-S21-Ultra-portada-1000x600.jpg', 'Samsung Galaxy S21 Ultra', 'google.com');
-            }else if(i.textContent == 'WATCHES'){
+            }else if(i.textContent == 'ACCESORIOS'){
                 title.innerHTML = i.textContent;
                 list.innerHTML = "<li class='brandOp' data-id='b1' onmouseover=submenuCont('b1')>Destacados</li> <li class='brandOp' data-id='b2'>Samsung</li> <li class='brandOp' data-id='b3'>Apple</li> <li class='brandOp' data-id='b4'>Xiaomi</li>";
                 list.setAttribute('data-id', 'b');
                 exampleContent('https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7-availability_hero_10052021_big.jpg.large.jpg', 'Nuevo Apple Watch Series 7', '#');
-            }else if(i.textContent == 'BUDS'){
-                title.innerHTML = i.textContent;
-                list.innerHTML = "<li class='brandOp'>Destacados</li> <li class='brandOp'>Samsung</li> <li class='brandOp'>Skullcandy</li> <li class='brandOp'>Apple</li> <li class='brandOp'>Xiaomi</li>";
-                list.setAttribute('data-id', 'c')
-            }else if(i.textContent == 'ACCESORIOS'){
-                title.innerHTML = i.textContent;
-                list.innerHTML = "<li class='brandOp'>Destacados</li> <li class='brandOp'>Cargadores</li> <li class='brandOp'>Parlantes</li> <li class='brandOp'>Fundas</li>";  
-                list.setAttribute('data-id', 'd')
-            }    
+            } 
+            // }else if(i.textContent == 'BUDS'){
+            //     title.innerHTML = i.textContent;
+            //     list.innerHTML = "<li class='brandOp'>Destacados</li> <li class='brandOp'>Samsung</li> <li class='brandOp'>Skullcandy</li> <li class='brandOp'>Apple</li> <li class='brandOp'>Xiaomi</li>";
+            //     list.setAttribute('data-id', 'c')
+            // }else if(i.textContent == 'ACCESORIOS'){
+            //     title.innerHTML = i.textContent;
+            //     list.innerHTML = "<li class='brandOp'>Destacados</li> <li class='brandOp'>Cargadores</li> <li class='brandOp'>Parlantes</li> <li class='brandOp'>Fundas</li>";  
+            //     list.setAttribute('data-id', 'd')
+            // }    
         })
     })
 }

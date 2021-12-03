@@ -1,0 +1,130 @@
+<%- include('partials/head', {linkCSS:'./styles/css/styles.css',
+tituloWeb:'Cesta'}) %>
+<body>
+    <div class="container">
+        <div class="header" style="height: min-content;">
+            <%- include('partials/navbar')  %> 
+            <%- include('partials/dropdownNav') %> 
+        </div>
+        <div class="shoppingBody">
+            <h2 class="shoppingCartTitle">
+                Carrito de Compras
+            </h2>
+            <table>
+                <tr>
+                    <th class="productColumn">PRODUCTO</th>
+                    <th class="codeColumn">CÓDIGO</th>
+                    <th class="qntColumn">CANTIDAD</th>
+                    <th class="totalColumn">TOTAL</th>
+                </tr>
+                <tr>
+                    <td class="productDef">
+                        <div class="productImgCont">
+                            <img src="https://www.techinn.com/f/13809/138098416/samsung-smartphone-galaxy-a72-6gb-128gb-6.7.jpg" alt="">
+                        </div>
+                        <p class="productDefName">Samsung Galaxy A72</p>
+                    </td>
+                    <td class="productCode">
+                        4563134364361
+                    </td>
+                    <td class="productQnt">
+                        <input type="number" name="" id="">
+                    </td>
+                    <td class="productDefPrize">
+                        <p class="defPrize">S/.1899</p>
+                        <p class="delProduct">Eliminar</p>
+                        
+                    </td>
+                </tr>
+                
+                <!--  -->
+                <tr>
+                    <td class="productDef">
+                        <div class="productImgCont">
+                            <img src="https://www.techinn.com/f/13809/138098416/samsung-smartphone-galaxy-a72-6gb-128gb-6.7.jpg" alt="">
+                        </div>
+                        <p class="productDefName">Samsung Galaxy A72</p>
+                    </td>
+                    <td class="productCode">
+                        4563134364361
+                    </td>
+                    <td class="productQnt">
+                        <input type="number" name="" id="">
+                    </td>
+                    <td class="productDefPrize">
+                        <p class="defPrize">S/.1899</p>
+                        <p class="delProduct">Eliminar</p>
+                        
+                    </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td class="productDef">
+                        <div class="productImgCont">
+                            <img src="https://www.techinn.com/f/13809/138098416/samsung-smartphone-galaxy-a72-6gb-128gb-6.7.jpg" alt="">
+                        </div>
+                        <p class="productDefName">Samsung Galaxy A72</p>
+                    </td>
+                    <td class="productCode">
+                        4563134364361
+                    </td>
+                    <td class="productQnt">
+                        <input type="number" name="" id="">
+                    </td>
+                    <td class="productDefPrize">
+                        <p class="defPrize">S/.1899</p>
+                        <p class="delProduct">Eliminar</p>
+                        
+                    </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td class="productDef">
+                        <div class="productImgCont">
+                            <img src="https://www.techinn.com/f/13809/138098416/samsung-smartphone-galaxy-a72-6gb-128gb-6.7.jpg" alt="">
+                        </div>
+                        <p class="productDefName">Samsung Galaxy A72</p>
+                    </td>
+                    <td class="productCode">
+                        4563134364361
+                    </td>
+                    <td class="productQnt">
+                        <input type="number" name="" id="">
+                    </td>
+                    <td class="productDefPrize">
+                        <p class="defPrize">S/.1899</p>
+                        <p class="delProduct">Eliminar</p>
+                        
+                    </td>
+                </tr>
+            </table>
+            <div class="subShopping">
+                <div class="entregaSct">
+                    <h2 class="entregaTitle">Entrega</h2>
+                    
+                    <p>Distrito</p>
+                    <select name="Distrito" id="">
+                        <option value="">Seleccione un distrito</option>
+                        <option value="">Ate</option>
+                        <option value="">Comas</option>
+                        <option value="">Los Olivos</option>
+                        <option value="">Miraflores</option>
+                        <option value="">San Isidro</option>
+                        <option value="">San Juan de Lurigancho</option>
+                        <option value="">Surco</option>
+                        <option value="">Villa Maria del Triunfo</option>
+                    </select>
+                    <p>Dirección</p>
+                    <input type="text" name="" id="" placeholder="Ingrese su dirección">
+                    <input type="button" value="Calcular envío">
+                </div>
+                <div class="amountsSct">
+
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer')  %> 
+    </div>
+</body>
+<script src="./js/dropdown.js"></script>
+</html>

@@ -1,0 +1,102 @@
+<%- include('partials/head', {linkCSS:'./styles/css/styles.css', tituloWeb:'Menu'})  %> 
+<body>
+    <div class="container"> 
+        <div class="header" style="height: min-content;">
+            <%- include('partials/navbar')  %> 
+            <%- include('partials/dropdownNav') %> 
+        </div>
+        <div class="containerMenu">
+
+            <div class="filtersPanel">
+                <div class="filtersElements">
+                    <h2 class="filtersTitle">Filtros</h2>
+                    <div class="filter1">
+                        <h3 class="filterTitle">Departamento</h3>
+                        <ul class="filter1Options">
+                            <li class="filter1Option"><label for="">Celulares</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter1Option"><label for="">Audifonos</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter1Option"><label for="">Watches</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter1Option"><label for="">Cargadores</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter1Option"><label for="">Parlantes</label><input type="checkbox" name="" id=""></li>
+                        </ul>
+                    </div>
+                    <div class="filter2">
+                        <h3 class="filterTitle">Marca</h3>
+                        <ul class="filter2Options">
+                            <li class="filter2Option"><label for="">Apple</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">Huawei</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">JBL</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">Motorola</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">Samsung</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">Skullcandy</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">Sony</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter2Option"><label for="">Xiaomi</label><input type="checkbox" name="" id=""></li>
+                        </ul>
+                    </div>
+                    <div class="filter3">
+                        <h3 class="filterTitle">Precio</h3>
+                        <input type="number" placeholder="Min S/.20" name="" id=""><span>a</span><input type="number" placeholder="Max S/. 10000" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="productsPanel">
+                <div class="productGrid">
+                    <div class="productImgCont">
+                        <img src="http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/14154211/SAMSUNG-GALAXY-S21-128GB-MORADO-SMARTPHONESPERU-1.jpg" alt="s21">
+                    </div>
+                    <p class="productName">
+                        Samsung Galaxy S21
+                    </p>
+                    <p class="productPrize">S/. 3159</p>
+                    <ul class="productSpecs">
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                    </ul>
+                    <button class="btnBuy"><a href="/menu/producto">COMPRAR</a></button>
+                </div>
+                <div class="productGrid">
+                    <div class="productImgCont">
+                        <img src="http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/14154211/SAMSUNG-GALAXY-S21-128GB-MORADO-SMARTPHONESPERU-1.jpg" alt="s21">
+                    </div>
+                    <p class="productName">
+                        Samsung Galaxy S21
+                    </p>
+                    <p class="productPrize">S/. 3159</p>
+                    <ul class="productSpecs">
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                    </ul>
+                    <div class="btnsProduct">
+                        <button class="btnBuy"><a href="#">COMPRAR</a></button>
+                    </div>
+                </div>
+                <div class="productGrid">
+                    <div class="productImgCont">
+                        <img src="http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/14154211/SAMSUNG-GALAXY-S21-128GB-MORADO-SMARTPHONESPERU-1.jpg" alt="s21">
+                    </div>
+                    <p class="productName">
+                        Samsung Galaxy S21
+                    </p>
+                    <p class="productPrize">S/. 3159</p>
+                    <ul class="productSpecs">
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                        <li class="productSpec">demo</li>
+                    </ul>
+                    <div class="btnsProduct">
+                        <button class="btnBuy"><a href="#">COMPRAR</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/footer')  %> 
+    </div>
+</body>
+<script src="./js/dropdown.js"></script>
+</html>
