@@ -104,21 +104,20 @@
           font-size: 1rem;
           cursor: pointer; }
   .container .containerMenu {
-    width: 90%;
+    width: 92%;
     height: auto;
     min-height: 150vh;
     display: grid;
     padding-top: 4.375rem;
-    grid-template-columns: 3fr 10fr;
+    grid-template-columns: 3fr 12fr;
     grid-template-rows: auto; }
     .container .containerMenu .filtersPanel {
       height: 150vh;
       grid-column: 1/2;
       grid-row: 1/2;
-      padding-top: 4.375rem;
-      border-right: solid #400B24 0.0625rem; }
+      padding-top: 4.375rem; }
       .container .containerMenu .filtersPanel .filtersElements {
-        padding-right: 6.25rem;
+        padding-right: 3.125rem;
         display: flex;
         flex-direction: column;
         gap: 1.875rem; }
@@ -186,54 +185,57 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: max-content;
-      column-gap: 3.125rem;
-      row-gap: 3.125rem;
-      padding-top: 3.125rem; }
+      column-gap: 1.25rem;
+      row-gap: 9.375rem;
+      padding-top: 3.125rem;
+      padding-bottom: 6.25rem; }
       .container .containerMenu .productsPanel .productGrid {
         display: flex;
+        width: 13.75rem;
         flex-direction: column;
         justify-self: center;
         align-items: center;
-        gap: 0.9375rem; }
+        gap: 2.1875rem; }
         .container .containerMenu .productsPanel .productGrid .productImgCont {
           position: relative;
           width: 12.5rem;
-          height: 15.625rem; }
-          .container .containerMenu .productsPanel .productGrid .productImgCont img {
-            width: 12.5rem; }
+          display: flex; }
+          .container .containerMenu .productsPanel .productGrid .productImgCont .productThumbnail {
+            height: 12.5rem; }
         .container .containerMenu .productsPanel .productGrid .productName {
           font-family: "Urbanist";
           color: #400B24;
           font-size: 1.125rem;
-          font-weight: bold; }
+          font-weight: bold;
+          text-align: center; }
         .container .containerMenu .productsPanel .productGrid .productPrize {
           font-family: "Urbanist";
           color: #400B24;
-          font-size: 1rem;
+          font-size: 1.1875rem;
           font-weight: bold; }
         .container .containerMenu .productsPanel .productGrid .productSpecs {
           display: flex;
           flex-direction: column;
+          align-items: center;
           gap: 0.625rem; }
           .container .containerMenu .productsPanel .productGrid .productSpecs .productSpec {
             font-family: "Urbanist";
             color: #400B24;
-            font-size: 0.875rem; }
-        .container .containerMenu .productsPanel .productGrid .btnBuy {
-          background-color: #8C2E47;
-          border: none;
-          border-radius: 1.875rem;
-          width: 6.25rem;
-          height: 2.1875rem; }
-          .container .containerMenu .productsPanel .productGrid .btnBuy a {
+            font-size: 0.9375rem; }
+        .container .containerMenu .productsPanel .productGrid a {
+          text-decoration: none; }
+          .container .containerMenu .productsPanel .productGrid a .btnBuy {
+            background-color: #8C2E47;
+            border: none;
+            border-radius: 1.875rem;
+            width: 9.375rem;
+            height: 2.1875rem;
             font-family: "Open Sans";
             color: #F5F5F5;
             font-size: 0.875rem;
-            text-decoration: none; }
-        .container .containerMenu .productsPanel .productGrid .btnBuy:hover {
-          background-color: #707070; }
-      .container .containerMenu .productsPanel .productGrid:hover {
-        border: solid #400B24 0.0625rem; }
+            cursor: pointer; }
+          .container .containerMenu .productsPanel .productGrid a .btnBuy:hover {
+            background-color: #707070; }
   .container .containerProduct {
     position: relative;
     top: 4.375rem;

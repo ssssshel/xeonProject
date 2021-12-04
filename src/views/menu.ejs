@@ -13,11 +13,11 @@
                     <div class="filter1">
                         <h3 class="filterTitle">Departamento</h3>
                         <ul class="filter1Options">
-                            <li class="filter1Option"><label for="">Celulares</label><input type="checkbox" name="" id=""></li>
-                            <li class="filter1Option"><label for="">Audifonos</label><input type="checkbox" name="" id=""></li>
-                            <li class="filter1Option"><label for="">Watches</label><input type="checkbox" name="" id=""></li>
-                            <li class="filter1Option"><label for="">Cargadores</label><input type="checkbox" name="" id=""></li>
-                            <li class="filter1Option"><label for="">Parlantes</label><input type="checkbox" name="" id=""></li>
+                            <li class="filter1Option"><label for="">Celulares</label><input type="checkbox" name="" id="cbCelulares"></li>
+                            <li class="filter1Option"><label for="">Audifonos</label><input type="checkbox" name="" id="cbAudifonos"></li>
+                            <li class="filter1Option"><label for="">Watches</label><input type="checkbox" name="" id="cbWatches"></li>
+                            <li class="filter1Option"><label for="">Cargadores</label><input type="checkbox" name="" id="cbCargadores"></li>
+                            <li class="filter1Option"><label for="">Parlantes</label><input type="checkbox" name="" id="cbParlantes"></li>
                         </ul>
                     </div>
                     <div class="filter2">
@@ -39,60 +39,40 @@
                     </div>
                 </div>
             </div>
+
             <div class="productsPanel">
-                <div class="productGrid">
-                    <div class="productImgCont">
-                        <img src="http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/14154211/SAMSUNG-GALAXY-S21-128GB-MORADO-SMARTPHONESPERU-1.jpg" alt="s21">
+                <% if (arrayProductsDB.length > 0) { %> 
+                    <% arrayProductsDB.forEach(product => { %> 
+                    <div class="productGrid">
+                        <div class="productImgCont">
+                            <img class="productThumbnail" src="<%= product.img %> " alt="<%= product.img %>">
+                        </div>
+                        <p class="productName">
+                            <%= product.nombre %> 
+                        </p>
+                        <p class="productPrize">S/.<%= product.precio %> </p>
+                        <ul class="productSpecs">
+                            <% if(product.tipo == 'celular'){ %> 
+                                <li class="productSpec">Marca: <%= product.marca %> </li>
+                                <li class="productSpec">Color: <%= product.caracteristicas.color %> </li>
+                                <li class="productSpec">Capacidad: <%= product.caracteristicas.almacenamiento %> </li>
+                                <li class="productSpec">Batería: <%= product.caracteristicas.bateria %> </li>
+
+                            <% }else{ %>
+                                <li class="productSpec">Marca: <%= product.caracteristicas.marca %> </li>
+                                <li class="productSpec">Color: <%= product.caracteristicas.color %> </li>
+                                <li class="productSpec">Bateria: <%= product.caracteristicas.bateria %> </li>
+
+                            <% } %> 
+                        </ul>
+                        <a href="/menu/<%= product.id %> "><button class="btnBuy">COMPRAR</button></a>
                     </div>
-                    <p class="productName">
-                        Samsung Galaxy S21
-                    </p>
-                    <p class="productPrize">S/. 3159</p>
-                    <ul class="productSpecs">
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                    </ul>
-                    <button class="btnBuy"><a href="/menu/producto">COMPRAR</a></button>
-                </div>
-                <div class="productGrid">
-                    <div class="productImgCont">
-                        <img src="http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/14154211/SAMSUNG-GALAXY-S21-128GB-MORADO-SMARTPHONESPERU-1.jpg" alt="s21">
-                    </div>
-                    <p class="productName">
-                        Samsung Galaxy S21
-                    </p>
-                    <p class="productPrize">S/. 3159</p>
-                    <ul class="productSpecs">
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                    </ul>
-                    <div class="btnsProduct">
-                        <button class="btnBuy"><a href="#">COMPRAR</a></button>
-                    </div>
-                </div>
-                <div class="productGrid">
-                    <div class="productImgCont">
-                        <img src="http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/14154211/SAMSUNG-GALAXY-S21-128GB-MORADO-SMARTPHONESPERU-1.jpg" alt="s21">
-                    </div>
-                    <p class="productName">
-                        Samsung Galaxy S21
-                    </p>
-                    <p class="productPrize">S/. 3159</p>
-                    <ul class="productSpecs">
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                        <li class="productSpec">demo</li>
-                    </ul>
-                    <div class="btnsProduct">
-                        <button class="btnBuy"><a href="#">COMPRAR</a></button>
-                    </div>
-                </div>
+                    <% }) %> 
+                <% } %> 
             </div>
+            <template>
+
+            </template>
         </div>
 
         <%- include('partials/footer')  %> 
