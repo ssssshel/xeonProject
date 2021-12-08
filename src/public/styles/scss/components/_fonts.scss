@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Urbanist";
+    src: url(/fonts/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@mixin fontSettings($v1, $v2, $v3) {
+    font-family: $v1;
+    color: $v2;
+    font-size: ($v3/16) + rem;
+}
+
+@function toRem($pxValue) {
+    $remValue: ($pxValue/16) + rem;
+    @return $remValue;
+}

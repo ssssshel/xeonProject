@@ -1,0 +1,394 @@
+@import "components/colors";
+@import "components/fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lgt;
+
+    * {
+        overflow: hidden;
+    }
+
+    .shoppingBody{
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-color: transparent;
+        padding: toRem(70) toRem(45);
+        display: flex;
+        flex-direction: column;
+        gap: toRem(50);
+        .shoppingCartTitle{
+            @include fontSettings("Urbanist", $drk, 30);
+        }
+        table{
+            border: solid toRem(1) $drk;
+            tr{
+                th{
+                    @include fontSettings("Urbanist", $drk, 18);
+                    height: toRem(60);
+                    border-bottom: solid $drk toRem(1);
+                }
+                td{
+                    height: toRem(130);
+                }
+                .productColumn{
+                    width: 40%;
+                    
+                }
+                .codeColumn{
+                    width: 15%;
+                }
+                .qntColumn{
+                    width: 20%;
+                }
+                .totalColumn{
+                    width: 25%;
+                }
+
+
+                .productDef{
+                    display: flex;
+                    flex-direction: row;
+                    gap: toRem(50);
+                    align-items: center;
+                    padding-top: toRem(30);
+                    padding-left: toRem(30);
+                    .productImgCont{
+                        width: toRem(100);
+                        img{
+                            width: toRem(100)
+                        }
+                    }
+                    
+                    .productDefName{
+                        @include fontSettings("Urbanist", $drk, 18);
+                        font-weight: bold;
+                    }
+                }
+                .productCode{
+                    @include fontSettings("Urbanist", $drk, 16);
+                    font-weight: bold;
+                    padding-bottom: toRem(30);
+                }
+                .productQnt{
+                    padding-bottom: toRem(30);
+                    input{
+                        position: relative;
+                        left: toRem(70);
+                        @include fontSettings("Urbanist", $drk, 16);
+                        font-weight: bold;
+                        height: toRem(25);
+                        width: toRem(100);
+                        
+                    }
+                }
+                .productDefPrize{
+                    padding-left: toRem(50);
+                    display: inline-flex;
+                    gap: toRem(70);
+                    align-items: baseline;
+                    .defPrize{
+                        @include fontSettings("Urbanist", $drk, 16)
+                    }
+                    .delProduct{
+                        @include fontSettings("Open Sans", $drk, 16);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    //MENU
+    .containerMenu {
+        width: 92%;
+        height: auto;
+        min-height: 150vh;
+        display: grid;
+        padding-top: toRem(70);
+        grid-template-columns: 3fr 12fr;
+        grid-template-rows: auto;
+
+        .filtersPanel {
+            height: 150vh;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding-top: toRem(70);
+            // border-right: solid $drk toRem(1);
+
+            .filtersElements {
+                padding-right: toRem(50);
+                display: flex;
+                flex-direction: column;
+                gap: toRem(30);
+
+                .filtersTitle {
+                    @include fontSettings("Urbanist", $drk, 26);
+                }
+
+                .filter1,
+                .filter2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(15);
+
+                    .filterTitle {
+                        @include fontSettings("Urbanist", $drk, 20)
+                    }
+
+                    .filter1Options,
+                    .filter2Options {
+                        display: flex;
+                        flex-direction: column;
+                        gap: toRem(10);
+
+                        .filter1Option,
+                        .filter2Option {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            @include fontSettings("Open Sans", $drk, 15)
+                        }
+                    }
+                }
+
+                .filter2 {
+                    height: 10%;
+
+                    .filter2Options {
+
+                        overflow-y: visible;
+                    }
+                }
+
+                .filter3 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(20);
+
+                    .filterTitle {
+                        @include fontSettings("Urbanist", $drk, 20)
+                    }
+
+                    input[type="number"] {
+                        width: toRem(100);
+                        height: toRem(30);
+                        appearance: textfield;
+                    }
+
+                    input[type=number]::-webkit-inner-spin-button,
+                    input[type=number]::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                    }
+
+                    span {
+                        @include fontSettings("Open Sans", $drk, 15);
+                    }
+                }
+            }
+        }
+
+        .productsPanel {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: max-content;
+            column-gap: toRem(20);
+            row-gap: toRem(150);
+            padding-top: toRem(50);
+            padding-bottom: toRem(100);
+
+            .productGrid {
+                display: flex;
+                width: toRem(220);
+                flex-direction: column;
+                justify-self: center;
+                align-items: center;
+                gap: toRem(35);
+
+
+                .productImgCont {
+                    position: relative;
+                    width: toRem(200);
+                    display: flex;
+
+                    .productThumbnail {
+                        height: toRem(200)
+                    }
+                }
+
+                .productName {
+                    @include fontSettings("Urbanist", $drk, 18);
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .productPrize {
+                    @include fontSettings("Urbanist", $drk, 19);
+                    font-weight: bold;
+                }
+
+                .productSpecs {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: toRem(10);
+
+                    .productSpec {
+                        @include fontSettings("Urbanist", $drk, 15);
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+
+                    .btnBuy {
+                        background-color: $bas;
+                        border: none;
+                        border-radius: toRem(30);
+                        width: toRem(150);
+                        height: toRem(35);
+                        @include fontSettings("Open Sans", $lgt, 14);
+                        cursor: pointer;
+                    }
+                    .btnBuy:hover {
+                        background-color: #707070
+                    }
+                }
+                
+            }
+        }
+    }
+
+    //PRODUCTO
+    .containerProduct{
+        position: relative;
+        top: toRem(70);
+        width: 100%;
+        height: min-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90vh 100vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        .panelProduct{
+            display: grid;
+            grid-template-columns: 6fr 1fr 7fr;
+            grid-template-rows: 100vh;
+            .imgProductCont{
+                grid-column: 1/2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: toRem(50);
+                img{
+                    max-height: 60vh;
+                    
+                }
+            }
+            .productDesc{
+                grid-column: 3/4;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;     
+                gap: toRem(15);
+                margin-bottom: toRem(50);
+                .productName{
+                    @include fontSettings("Urbanist", $drk, 30)
+                }
+                .productCode{
+                    @include fontSettings("Urbanist", $drk, 14)
+                }
+                .productPrize{
+                    @include fontSettings("Urbanist", drk, 26)
+                }
+                .memorySelect{
+                    input{
+                        width: toRem(70);
+                        height: toRem(30);
+                        margin-right: toRem(15);
+                        @include fontSettings("Urbanist", $drk, 16);
+                        background-color: transparent;
+                        border: solid toRem(1) $drk;
+                    }
+                    input:hover{
+                        background-color: #707070;
+
+                    }
+                }
+                .colorSelect{
+                    input{
+                        width: toRem(70);
+                        height: toRem(30);
+                        margin-right: toRem(15);
+                        @include fontSettings("Urbanist", $drk, 16);
+                        background-color: transparent;
+                        border: solid toRem(1) $drk;
+                    }
+                    input:hover{
+                        background-color: #707070;
+
+                    }
+                }
+
+                #btnCar{
+                    width: toRem(150);
+                    height: toRem(50);
+                    margin-right: toRem(15);
+                    @include fontSettings("Urbanist", $lgt, 16);
+                    background-color: $bas;
+                    border: none;
+                }
+
+                #btnCar:hover{
+                    background-color: #707070;
+                    font-weight: bold;
+                }
+
+                .stock{
+                    @include fontSettings("Urbanist", $drk, 14);
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .panelInfo{
+            display: flex;
+            flex-direction: column;
+            gap: toRem(20);
+            .detailsTitle{
+                @include fontSettings("Urbanist", $drk, 26)
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: toRem(20);
+                .detail{
+                    @include fontSettings("Open Sans", $drk, 16)
+                }
+            }
+        }
+    }
+
+
+    //INDEX
+    @import "components/index";
+
+    @import "components/header";
+
+    @import "components/footer";
+}
