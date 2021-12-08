@@ -1,0 +1,65 @@
+<%- include('partials/head', {linkCSS:'/styles/css/styles.css', tituloWeb:'Producto'})  %> 
+<body>
+    <div class="container">
+        <div class="header" style="height: min-content;">
+            <%- include('partials/navbar')  %> 
+            <%- include('partials/dropdownNav') %> 
+        </div>
+        <div class="containerProduct">
+            <div class="panelProduct">
+                <div class="imgProductCont">
+                    <img src="<%= product.img %> " alt="gxy a72">
+                </div>
+                <div class="productDesc">
+                    <h2 class="productName"><%= product.nombre %> </h2>
+                    <p class="productCode">CÓDIGO: 11T-115574</p>
+                    <p class="productPrize">S/. <%= product.precio %> </p>
+                    <% if(product.tipo == "celular"){ %> 
+                        <div class="memorySelect">
+                            <input type="button" id="mem1" value="<%= product.caracteristicas.almacenamiento %> ">
+                            <!-- <input type="button" id="mem2" value="256GB"> -->
+                        </div>
+                        <div class="colorSelect">
+                            <input type="button" id="col1" value="<%= product.caracteristicas.color %> "> 
+                            <!-- <input type="button" id="col2" value="Blanco"> -->
+                        </div>
+                    <% }else{ %> 
+                        <div class="colorSelect">
+                            <input type="button" id="col1" value="<%= product.caracteristicas.color %> "> 
+                            <!-- <input type="button" id="col2" value="Blanco"> -->
+                        </div>
+                    <% } %> 
+                    
+                    <button id="btnCar">AGREGAR AL CARRITO</button>
+                    <p class="stock">Unidades disponibles: </p>
+                </div>
+            </div>
+            <div class="panelInfo">
+                <h2 class="detailsTitle">DETALLES TÉCNICOS</h2>
+                <ul>
+                    <% if(product.tipo == "celular"){ %> 
+                        <li class="detail">Tipo: Celular</li>
+                        <li class="detail">Marca: <%= product.marca %> </li>
+                        <li class="detail">Color: <%= product.caracteristicas.color %> </li>
+                        <li class="detail">Memoria Interna: <%= product.caracteristicas.almacenamiento %> </li>
+                        <li class="detail">Cámara: <%= product.caracteristicas.camara %> </li>
+                        <li class="detail">Pantalla: <%= product.caracteristicas.pantalla %> </li>
+                        <li class="detail">Procesador: <%= product.caracteristicas.procesador %> </li>
+                        <li class="detail">Ram: <%= product.caracteristicas.ram %> </li>
+                        <li class="detail">Batería: <%= product.caracteristicas.bateria %> </li>
+                        <li class="detail">Conectividad: <%= product.caracteristicas.conectividad %> </li>
+                    <% }else{ %> 
+                        <li class="detail">Tipo: <%= product.tipo %> </li>
+                        <li class="detail">Marca: <%= product.marca %> </li>
+                        <li class="detail">Color: <%= product.caracteristicas.color %> </li>
+                        <li class="detail">Batería: <%= product.caracteristicas.bateria %> </li>
+                        <li class="detail">Conectividad: <%= product.caracteristicas.conectividad %> </li>
+                    <% } %> 
+                </ul>
+            </div>
+        </div>
+        <%- include('partials/footer')  %> 
+    </div>
+</body>
+<script src="/js/dropdown.js"></script>
+</html>

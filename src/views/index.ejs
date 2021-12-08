@@ -1,0 +1,219 @@
+<%- include('partials/head', {linkCSS:'./styles/css/styles.css', tituloWeb:'Principal'})  %> 
+<body>
+    <div class="container">
+        <div class="header">
+            <%- include('partials/navbar')  %> 
+
+            <%- include('partials/dropdownNav') %> 
+
+            <div class="headerSliderContainer">
+                <button id="headerSliderLeft"> < </button>
+                <button id="headerSliderRight"> > </button>
+                <ul class="headerSlider">
+                    <li id="headerSlide1">
+                        <div id="textSlide1">
+                            <h2>MI 11 ULTRA</h2>
+                            <p>La gama top de Xiaomi a precios irresistibles</p>
+                        </div>
+                        <input id="seeMore1" type="button" value="Ver más"></input>
+                        <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Mi_11_Ultra_xiaomi.jpg" alt="Mi_11_Ultra_xiaomi">
+                    </li>
+                    <li id="headerSlide2">
+                        <div id="textSlide2">
+                            <h2>CALIDAD DE SONIDO INIGUALABLE</h2>
+                            <p>Con los nuevos Galaxy Buds 2</p>
+                        </div>
+                        <input id="seeMore2" type="button" value="Ver más"></input>
+                        <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/09/Samsung-Galaxy-Buds-2.jpg" alt="Buds2">
+                    </li>
+                    <li id="headerSlide3">
+                        <div id="textSlide3">
+                            <h2>COMODIDAD Y VERSATILIDAD</h2>
+                            <p>De sobra para los Apple Watch Series 7</p>
+                        </div>
+                        <input id="seeMore3" type="button" value="Ver más">
+                        <img src="https://fdn.gsmarena.com/imgroot/news/21/09/apple-watch-series-7/-1220x526/gsmarena_0000.jpg" alt="appleWatch7">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobileSection">
+            <div class="mobileContainer">
+                <h2 class="mobileTitle">CELULARES</h2>
+                <ul id="mobileOptions" class="mobileOptions">
+                    <li id="mobileOption1" class="mobileOption"><a>Samsung</a></li>
+                    <li id="mobileOption2" class="mobileOption"><a>Apple</a></li>
+                    <li id="mobileOption3" class="mobileOption"><a>Xiaomi</a></li>
+                    <li id="mobileOption4" class="mobileOption"><a>Motorola</a></li>
+                    <li id="mobileOption5" class="mobileOption"><a>Huawei</a></li>
+                </ul>
+                <ul class="mobileSlider">
+                    <li id="mobileSlide1" class="mobileSlide">
+                        <div class="mobileImgContainer">
+                            <img src="https://samsungpe.vtexassets.com/arquivos/ids/168567-800-auto?width=800&  height=auto&aspect=true" alt="s21">
+                        </div>
+                        <h3 id="mobileName1" class="mobileName">Samsung Galaxy S21</h3>
+                        <div id="mobileBtns1" class="mobileBtns">
+                            <a id="seeMoreM1" href="#">Ver más</a>
+                            <button id="btnBuy1" class="btnbuyM"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="mobileSlide2" class="mobileSlide">
+                        <div class="mobileImgContainer">
+                            <img src="https://i.blogs.es/da8cbb/iphone-13-pro/1366_2000.jpg" alt="iphone13">
+                        </div>
+                        <h3 id="mobileName2" class="mobileName">Nuevo Iphone 13 Pro</h3>
+                        <div id="mobileBtns2" class="mobileBtns">
+                            <a id="seeMoreM2" href="#">Ver más</a>
+                            <button id="btnBuy2" class="btnbuyM"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="mobileSlide3" class="mobileSlide">
+                        <div class="mobileImgContainer">
+                            <img src="https://shopmi.pe/wp-content/uploads/2021/04/mi11litenrosa.png" alt="mi11lite">
+                        </div>
+                        <h3 id="mobileName3" class="mobileName">Mi11 Lite</h3>
+                        <div id="mobileBtns3" class="mobileBtns">
+                            <a id="seeMoreM3" href="#">Ver más</a>
+                            <button id="btnBuy3" class="btnbuyM"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="mobileSlide4" class="mobileSlide">
+                        <div class="mobileImgContainer">
+                            <img src="https://clubdeofertas.com.py/TIENDIT/todas_las_img2/13011_64_1.jpg" alt="g9power">
+                        </div>
+                        <h3 id="mobileName4" class="mobileName">G9 Power</h3>
+                        <div id="mobileBtns4" class="mobileBtns">
+                            <a id="seeMoreM4" href="#">Ver más</a>
+                            <button id="btnBuy4" class="btnbuyM"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="mobileSlide5" class="mobileSlide">
+                        <div class="mobileImgContainer">
+                            <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/list-image/phones/p40-pro/p40-pro-silver.png" alt="p40-pro">
+                        </div>
+                        <h3 id="mobileName5" class="mobileName">P40 Pro</h3>
+                        <div id="mobileBtns5" class="mobileBtns">
+                            <a id="seeMoreM5" href="#">Ver más</a>
+                            <button id="btnBuy5" class="btnbuyM"><a href="#">Comprar</a></button>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accesoriesSection">
+            <div class="accesoriesContainer">
+                <h2 class="accesoriesTitle">ACCESORIOS</h2>
+                <ul id="accesoriesOptions" class="accesoriesOptions">
+                    <li id="accOption1" class="accOption"><a >Watches</a></li>
+                    <li id="accOption2" class="accOption"><a >Earbuds</a></li>
+                    <li id="accOption3" class="accOption"><a >MiBand</a></li>
+                    <li id="accOption4" class="accOption"><a >Parlantes</a></li>
+                    <li id="accOption5" class="accOption"><a >Cargadores</a></li>
+                </ul>
+                <ul class="accesoriesSlider">
+                    <li id="accSlide1" class="accSlide">
+                        <div class="accImgContainer">
+                            <img src="https://img.menzig.tech/a/2000/2294-h2.jpg" alt="gxy-watch4">
+                        </div>
+                        <h3 id="accName1" class="accName">Galaxy Watch 4</h3>
+                        <div id="accBtns1" class="accBtns">
+                            <a id="seeMoreA1" href="#">Ver más</a>
+                            <button id="btnBuyA1" class="btnbuyA"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="accSlide2" class="accSlide">
+                        <div class="accImgContainer">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2065276962580/2065276962580_2.jpg" alt="freebuds4i">
+                        </div>
+                        <h3 id="accName2" class="accName">Huawei Freebuds 4i</h3>
+                        <div id="accBtns2" class="accBtns">
+                            <a id="seeMoreA2" href="#">Ver más</a>
+                            <button id="btnBuyA2" class="btnbuyA"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="accSlide3" class="accSlide">
+                        <div class="accImgContainer">
+                            <img src="https://xiaomiperu.com/media/catalog/product/cache/deaf12c726c019462dcd02884cec40ac/m/i/mi-smart-band-6_1.jpg" alt="MiBand6">
+                        </div>
+                        <h3 id="accName3" class="accName">Xiaomi Mi Band 6</h3>
+                        <div id="accBtns3" class="accBtns">
+                            <a id="seeMoreA3" href="#">Ver más</a>
+                            <button id="btnBuyA3" class="btnbuyA"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="accSlide4" class="accSlide">
+                        <div class="accImgContainer">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2065238740911/2065238740911_2.jpg" alt="jbl flip 5">
+                        </div>
+                        <h3 id="accName4" class="accName">JBL Flip 5</h3>
+                        <div id="accBtns4" class="accBtns">
+                            <a id="seeMoreA4" href="#">Ver más</a>
+                            <button id="btnBuyA4" class="btnbuyA"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                    <li id="accSlide5" class="accSlide">
+                        <div class="accImgContainer">
+                            <img src="https://i.blogs.es/5b1a54/mpowjapan___cut007_480x480.jpg/450_1000.jpg" alt="magsafe">
+                        </div>
+                        <h3 id="accName5" class="accName">Cargador Inalámbrico MagSafe</h3>
+                        <div id="accBtns5" class="accBtns">
+                            <a id="seeMoreA5" href="#">Ver más</a>
+                            <button id="btnBuyA5" class="btnbuyA"><a href="#">Comprar</a></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="offersSection">
+            <div class="offersGrid">
+                <h2 class="offersTitle">OFERTAS DEL MES</h2>
+                <div id="offerGridItem1" class="offerGridItem">
+                    <div class="offerImgContainer">
+                        <img src="https://haierspain.com/wp-content/uploads/2021/03/Todos-los-telefonos-Xiaomi-lanzados-en-2021.jpg" alt="xiaomi">
+                    </div>
+                    <h3 class="offerName">Hasta 40% de descuento en celulares Xiaomi</h3>
+                    <button><a href="">Conoce más</a></button>
+                </div>
+                <div id="offerGridItem2" class="offerGridItem">
+                    <div class="offerImgContainer">
+                        <img src="https://falabella.scene7.com/is/image/FalabellaPE/17697461_1?wid=800&hei=800&qlt=70" alt="appleseries6">
+                    </div>
+                    <h3 class="offerName">Apple Watch Series 6</h3>
+                    <button><a href="">Conoce más</a></button>
+                </div>
+                <div id="offerGridItem3" class="offerGridItem">
+                    <div class="offerImgContainer">
+                        <img src="https://mercury.vteximg.com.br/arquivos/ids/3778258-800-800/image-5831cf5ef0d14af08236e340b9ca7f9e.jpg?v=637680037386500000" alt="SONYXB01">
+                    </div>
+                    <h3 class="offerName">Sony XB01</h3>
+                    <button><a href="">Conoce más</a></button>
+                </div>
+                <div id="offerGridItem4" class="offerGridItem">
+                    <div class="offerImgContainer">
+                        <img src="https://falabella.scene7.com/is/image/FalabellaPE/18010999_1?wid=800&hei=800&qlt=70" alt="GXYA32">
+                    </div>
+                    <h3 class="offerName">Samsung Galaxy A32</h3>
+                    <button><a href="">Conoce más</a></button>
+                </div>
+                <div id="offerGridItem5" class="offerGridItem">
+                    <div class="offerImgContainer">
+                        <img src="https://images.samsung.com/is/image/samsung/es/galaxy-note20/gallery/es-galaxy-buds-live-r180-sm-r180nznaeub-casetopcombinationmysticbronze-thumb-275602697?$480_480_PNG$" alt="budslive">
+                    </div>
+                    <h3 class="offerName">Galaxy Buds Live</h3>
+                    <button><a href="">Conoce más</a></button>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/footer')  %> 
+    </div>
+</body>
+<script src="./js/carouselHeader.js"></script>
+<script src="./js/dropdown.js"></script>
+<script src="./js/carouselMobile.js"></script>
+</html>
