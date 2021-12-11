@@ -21,6 +21,7 @@ app.use('/', require('./routes/index'));
 app.use('/menu', require('./routes/products'));
 app.use('/cesta', require('./routes/shoppingCart'));
 app.use('/soporte', require('./routes/support'));
+app.use('/users', require('./routes/users'))
 // app.use('/insertData', require('./routes/devFunctions'));
 
 

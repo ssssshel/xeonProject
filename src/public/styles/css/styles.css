@@ -198,10 +198,13 @@
         gap: 2.1875rem; }
         .container .containerMenu .productsPanel .productGrid .productImgCont {
           position: relative;
-          width: 12.5rem;
-          display: flex; }
+          width: 13.75rem;
+          max-width: 13.75rem;
+          display: flex;
+          justify-content: center; }
           .container .containerMenu .productsPanel .productGrid .productImgCont .productThumbnail {
-            height: 12.5rem; }
+            height: auto;
+            max-height: 12.5rem; }
         .container .containerMenu .productsPanel .productGrid .productName {
           font-family: "Urbanist";
           color: #400B24;

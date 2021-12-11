@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url( 'OpenSans.ttf') format(truetype); 
+}
+
+Open{
+  font-family: OpenSans;
+}
+
+@font-face {
+  font-family: Urbanist;
+  src: url( 'Urbanist.ttf') format(truetype); 
+}
+
+Urbanist{
+  color: #400B24;
+  font-family: Urbanist;
+}
+
+.form-register{
+  width: 400px;
+  background: #400B24;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: Urbanist;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.controls{
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #400B24;
+  font-family: Urbanist;
+  font-size: 18px;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Urbanist;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons{
+  width: 100%;
+  margin: 16px 0;
+  font-family: Urbanist;
+  background: white;
+  color: #400B24;
+  font-size: 16px;
+  padding: 12px;
+  border-color: white;
+}

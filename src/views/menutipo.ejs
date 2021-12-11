@@ -1,4 +1,4 @@
-<%- include('partials/head', {linkCSS:'./styles/css/styles.css', tituloWeb:'Menu'})  %> 
+<%- include('partials/head', {linkCSS:'/styles/css/styles.css', tituloWeb:'Menu'})  %> 
 <body>
 	<div class="container"> 
 		<div class="header" style="height: min-content;">
@@ -17,7 +17,7 @@
 							<li class="filter1Option"><label for="">Celulares</label><input type="radio" name="tipo" id="chkCelulares" data-id='CELULARES' onclick="der('CELULAR')"></li>
 							<li class="filter1Option"><label for="">Audifonos</label><input type="radio" name="tipo" id="chkAudifonos" data-id='BUDS' onclick="der('BUDS')"></li>
 							<li class="filter1Option"><label for="">Watches</label><input type="radio" name="tipo" id="chkWatches" data-id='WATCHES' onclick="der('WATCH')"></li>
-							<li class="filter1Option"><label for="">Cargadores</label><input type="radio" name="tipo" id="chkCargadores" data-id='CARGADORES' onclick="der('CARGADOR')"></li>
+							<li class="filter1Option"><label for="">Cargadores</label><input type="radio" name="tipo" id="chkCargadores" data-id='CARGADOR' onclick="der('CARGADOR')"></li>
 							<li class="filter1Option"><label for="">Parlantes</label><input type="radio" name="tipo" id="chkParlantes" data-id='PARLANTES' onclick="der('PARLANTE')"></li>
 						</ul>
 					</div>
@@ -71,7 +71,7 @@
 
 							<% } %> 
 						</ul>
-						<a href="/menu/producto/<%= product.id %> "><button class="btnBuy">COMPRAR</button></a>
+						<a href="/menu/producto/<%= product.tipo + "/" + product.id %> "><button class="btnBuy">COMPRAR</button></a>
 					</div>
 					<% }) %> 
 				<% }else{ %> 
@@ -87,11 +87,12 @@
 	</div>
 
 
-	<script src="./js/dropdown.js"></script>
+	<script src="/js/dropdown.js"></script>
 	<script>
 		function der(loc){
 			window.location.href = `/menu/tipo/${loc}`;
 		}
+
 		function dor(luc){
 			window.location.href = `/menu/marca/${luc}`
 		}

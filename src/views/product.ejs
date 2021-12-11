@@ -12,7 +12,7 @@
                 </div>
                 <div class="productDesc">
                     <h2 class="productName"><%= product.nombre %> </h2>
-                    <p class="productCode">CÓDIGO: 11T-115574</p>
+                    <p class="productCode">CÓDIGO: <%= product.id %> </p>
                     <p class="productPrize">S/. <%= product.precio %> </p>
                     <% if(product.tipo == "celular"){ %> 
                         <div class="memorySelect">
@@ -30,14 +30,14 @@
                         </div>
                     <% } %> 
                     
-                    <button id="btnCar">AGREGAR AL CARRITO</button>
+                    <button id="btnCar" data-id="<%= product.id %> ">AGREGAR AL CARRITO</button>
                     <p class="stock">Unidades disponibles: </p>
                 </div>
             </div>
             <div class="panelInfo">
                 <h2 class="detailsTitle">DETALLES TÉCNICOS</h2>
                 <ul>
-                    <% if(product.tipo == "celular"){ %> 
+                    <% if(product.tipo == "CELULAR"){ %> 
                         <li class="detail">Tipo: Celular</li>
                         <li class="detail">Marca: <%= product.marca %> </li>
                         <li class="detail">Color: <%= product.caracteristicas.color %> </li>
@@ -62,4 +62,53 @@
     </div>
 </body>
 <script src="/js/dropdown.js"></script>
+
+<script>
+
+    let carrito = [];
+    let total = 0;
+    const localStorage = window.localStorage;
+    const btnCar = document.getElementById('btnCar');
+
+
+    function addProducts(){
+        btnCar.addEventListener('click', () => {
+            carrito.push(btnCar.dataset.id);
+            saveInLocalStorage();
+            chargeLocalStorage()
+        })
+    }
+
+
+    function saveInLocalStorage(){
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+    }
+    
+    function chargeLocalStorage(){
+        if(localStorage.getItem('carrito') !== null){
+            carrito = JSON.parse(localStorage.getItem('carrito'));
+            console.log(carrito)
+        }
+    }
+
+    addProducts();
+
+    // btnCar.addEventListener('click', async() =>{
+    //     const id = btnCar.dataset.id;
+    //     try {
+    //         const data = await fetch(`/cesta/${id}`, {
+    //             method: 'post'
+    //         });
+    //         const res = await data.json();
+    //         if(res.estado){
+    //             alert("Se agregó al carrito");
+    //             window.location.href = '/cesta';
+    //         }else{
+    //             console.log(res);
+    //         }
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // })
+</script>
 </html>

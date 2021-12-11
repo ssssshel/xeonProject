@@ -222,11 +222,14 @@
 
                 .productImgCont {
                     position: relative;
-                    width: toRem(200);
+                    width: toRem(220);
+                    max-width: toRem(220);
                     display: flex;
+                    justify-content: center;
 
                     .productThumbnail {
-                        height: toRem(200)
+                        height: auto;
+                        max-height: toRem(200)
                     }
                 }
 
