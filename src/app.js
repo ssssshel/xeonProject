@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 require('dotenv').config();
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //definimos motor de plantillas y ubicación de estas
 app.set('view engine', 'ejs');
