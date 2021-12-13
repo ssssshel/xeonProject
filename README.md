@@ -30,13 +30,35 @@ Desarrollo web para una tienda de celulares y accesorios; enfocada en su promoci
 
 
 # Funcionalidades del proyecto
-- Filtros de búsqueda (tipo, marca, precio, etc).
-- Plantillas parciales para producto individual (MongoDB).
-- Método de pago (por definir).
-- Animaciones (carrusel, menú desplegable, transiciones, etc).
-- Asesoría personalizada, canales de contacto  (chatbot, celular, email).
+- Plantillas parciales para producto individual (MongoDB) ✅.
+- Animaciones JS(carrusel, menú desplegable, transiciones, etc) ✅.
+- Filtros de búsqueda (tipo, marca, precio, etc) ✅ (parcialmente).
+- CRUD completo para administradores ✅ (parcialmente).
+- Método de pago (Sandbox Paypal) ✅(parcialmente).
+- Asesoría personalizada, canales de contacto  (chatbot, celular, email) ✅(parcialmente).
+- Permanencia de estado de autenticación ❌.
+- Asincronización de interacciones de usuario ❌.
+- Carrito de compras dinámico ❌.
+- Perfil de usuario dinámico ❌.
 
 <br>
+
+# Tecnologías y herramientas utilizadas
+- Front-end dev: HTML, CSS, JS, EJS & Sass.
+- Back-end dev: NodeJS, Express, MongoDB & Microsoft Azure.
+- Dependencias node: 
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+- Otros: AdobeXD, Mailchimp, Heroku, Git & Azure Devops.
 
 *********************
 <br>
