@@ -30,9 +30,12 @@
                         </div>
                     <% } %> 
                     
-                    <button id="btnCar" data-id="<%= product.id %> ">AGREGAR AL CARRITO</button>
+                    <!-- <button id="btnCar" data-id="<%= product.id %> ">AGREGAR AL CARRITO</button> -->
+                    <a href="/pago"><button id="btnCar" data-id="<%= product.id %> ">COMPRAR</button></a>
                     <p class="stock">Unidades disponibles: </p>
+                    
                 </div>
+                
             </div>
             <div class="panelInfo">
                 <h2 class="detailsTitle">DETALLES TÉCNICOS</h2>
@@ -63,7 +66,9 @@
 </body>
 <script src="/js/dropdown.js"></script>
 
+
 <script>
+
 
     let carrito = [];
     let total = 0;

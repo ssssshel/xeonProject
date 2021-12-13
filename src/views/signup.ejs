@@ -1,48 +1,45 @@
 <%- include('partials/head', {linkCSS:'/styles/css/form.css', tituloWeb:'Users'})  %> 
 
-<form  class="form-register" action="https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDRWNV68ZESh8qIXF2S0nYgRwckrH8OAJE" method="POST">
-<!-- <form  class="form-register" ></form> -->
+
+
+<form class="form-register" action="/users/signup" method="POST">
     <h4>Registro</h4>
-    <!-- <input class="controls" type="text" name="nombre" placeholder="Nombre">
-    <input class="controls" type="text" name="apellido" placeholder="Apellidos"> -->
+
+    <input class="controls" type="user" name="username" id="txtUser" placeholder="Usuario">
     <input class="controls" type="email" name="email" id="txtMail" placeholder="Correo Electronico">
-    <!-- <input class="controls" type="user" name="usuario" placeholder="Usuario"> -->
     <input class="controls" type="password" name="password"  id="txtPassword" placeholder="Contraseña">
-    <input  class="botons" type="submit" id="btnRegistro" value="Registrar" >
+    
+    <button type="submit" class="botons" id="btnRegistro" >Registrar</button>
     <Urbanist><p><a href="#">¿Ya tienes una cuenta?</a></p></Urbanist>
- </form>
+</form>
+  <!-- <script>
+    const txtUser = document.getElementById('txtUser');
+    const txtMail = document.getElementById('txtMail');
+    const txtPassword = document.getElementById('txtPassword');
+    const btnRegistro = document.getElementById('btnRegistro');
+    
+    function Limpiar(){
 
-<!-- <script src="/feature/firbAuth.js"></script>
+    }
 
- <!-- BIBLIOTECAS DE FIREBASE -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    function Validar(){
+      if(txtUser.value == "" || txtUser.value == null){
+        alert("Ingresar nombre de usuario");
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+      }else if(txtMail.value == "" || txtMail.value == null){
+        alert("Ingresar una dirección de correo electrónico");
 
+      }else if(txtPassword.value == "" || txtPassword.value == null){
+        alert("Ingresar una contraseña")
 
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      }else{
+        btnRegistro.disabled = false
+      }
+    }
 
-<script>
-import { initializeApp } from 'firebase/app';
+    btnRegistro.addEventListener('select', Validar)
+  </script> -->
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDRWNV68ZESh8qIXF2S0nYgRwckrH8OAJE",
-  authDomain: "xeon-24444.firebaseapp.com",
-  databaseURL: "https://xeon-24444.firebaseio.com",
-  projectId: "xeon-24444",
-  storageBucket: "xeon-24444.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID",
-  measurementId: "G-MEASUREMENT_ID",
-}
-
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-
-    const auth=firebase.auth();
-</script> -->
+ 
 </body>
 </html>

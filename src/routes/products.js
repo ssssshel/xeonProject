@@ -1,10 +1,7 @@
 const express = require('express');
 const Product = require('../../models/product');
 const router = express.Router();
-const client = require('../libs/connect')()
-
-
-client;
+const verifyToken = require('../middlewares/authJwt');
 
 // MENU Y FILTROS
 
@@ -110,6 +107,27 @@ router.get('/product/:marca/:id', async(req, res) => {
           mensaje: "No se encuentra el producto seleccionado"
       })
   }
+})
+
+
+//CREAR PRODUCTOS
+
+router.post('', async(req, res) => {
+  
+})
+
+
+//ACTUALIZAR PRODUCTOS
+
+router.put('', async(req, res) => {
+
+})
+
+
+//ELIMINAR PRODUCTOS
+
+router.delete('', async() => {
+
 })
 
 module.exports = router; 

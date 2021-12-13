@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pago</title>
+  </head>
+  <body></body>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+  <script>
+    paypal
+      .Buttons({
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            // ...
+            purchase_units: [
+              {
+                amount: {
+                  value: 1000,
+                },
+              },
+            ],
+          });
+        },
+      })
+      .render("body");
+  </script>
+</html>
